@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/iToolbar"
+        layout="@layout/tollbar_chatactivity"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_alignParentTop="true" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorGreyBG">
+
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:id="@+id/swipeRefresh"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_above="@+id/relTypeMessage">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/_5sdp"
+                app:layoutManager="LinearLayoutManager"
+                app:stackFromEnd="true"
+                tools:context=".activities.ChatActivity"
+                tools:listitem="@layout/item_chat" />
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+        <RelativeLayout
+            android:id="@+id/relTypeMessage"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_alignParentBottom="true">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etMessage"
+                android:textAlignment="viewStart"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_toLeftOf="@+id/imgSend"
+                android:background="@color/colorLightGrey"
+                android:fontFamily="@font/roboto_regular"
+                android:hint="@string/send_message"
+                android:padding="@dimen/_10sdp"
+                android:layout_toStartOf="@+id/imgSend" />
+
+            <ImageView
+                android:id="@+id/imgSend"
+                android:layout_width="@dimen/_70sdp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/ic_send_with_bg"
+                android:visibility="visible"
+                android:rotationY="@integer/angle_rtl_180"
+                android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+
+
+        <include
+            layout="@layout/progress_bar_generic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+
+
+    </RelativeLayout>
+
+</LinearLayout>

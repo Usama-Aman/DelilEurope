@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/colorSubCategoriesBG"
+    android:layout_height="@dimen/list_item_height">
+
+    <CheckedTextView
+        android:id="@+id/list_item_multicheck_subcategory_name"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="@dimen/list_item_left_margin"
+        android:layout_marginLeft="@dimen/list_item_left_margin"
+        android:layout_marginEnd="@dimen/horizontal_margin"
+        android:layout_marginRight="@dimen/horizontal_margin"
+        android:checkMark="@drawable/ic_mark_unchek_small"
+        android:fontFamily="@font/roboto_regular"
+        android:textSize="@dimen/_14sdp"
+        android:gravity="center"
+        android:textColor="@color/colorBlackGrey"
+        tools:text="" />
+
+</FrameLayout>

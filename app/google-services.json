@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1001255595391",
+    "project_id": "dalileurope",
+    "storage_bucket": "dalileurope.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1001255595391:android:b7c1db9d9dd0c450473e4a",
+        "android_client_info": {
+          "package_name": "com.dalileuropeapps.dalileurope"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1001255595391-inst7s7cdjq0smikg50ovh1v05cqqnuq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAaRnxsMk1BeCL3CmiQ842jJZ5k16vUlZw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1001255595391-inst7s7cdjq0smikg50ovh1v05cqqnuq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cardItemList"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:id="@+id/relItem"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:orientation="horizontal"
+            android:layout_marginEnd="@dimen/_10sdp">
+
+            <ImageView
+                android:id="@+id/imgActiveInActive"
+                android:layout_width="@dimen/_5sdp"
+                android:layout_height="@dimen/_72sdp"
+                android:background="@color/colorBlack" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_marginStart="@dimen/_5sdp">
+
+                <ImageView
+                    android:id="@+id/imgAddIcon"
+                    android:layout_width="@dimen/_72sdp"
+                    android:layout_height="@dimen/_72sdp"
+                    android:background="@color/colorLightGrey"
+                    android:scaleType="center" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_100sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginStart="@dimen/_10sdp">
+
+                <LinearLayout
+                    android:id="@+id/llView"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@+id/imgAddListitemOptions"
+                    android:orientation="vertical"
+                    android:layout_toStartOf="@+id/imgAddListitemOptions">
+
+                    <TextView
+                        android:id="@+id/tvBussinessName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="viewStart"
+                        android:fontFamily="@font/roboto_regular"
+                        android:maxLength="30"
+                        android:text="Reat Estate"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/_11sdp" />
+
+                    <RelativeLayout
+                        android:layout_width="@dimen/_170sdp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_3sdp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tvAddTitle"
+                            android:layout_width="@dimen/_150sdp"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="viewStart"
+                            android:fontFamily="@font/roboto_bold"
+                            android:maxLength="40"
+                            android:text="Yes we can fix it! call jhonson today"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="@dimen/_13sdp" />
+
+                        <ImageView
+
+                            android:id="@+id/imgAddType"
+                            android:layout_width="16dp"
+                            android:layout_height="18dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentEnd="true" />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/tvAddDetail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:textAlignment="viewStart"
+                        android:fontFamily="@font/roboto_regular"
+                        android:maxLength="40"
+                        android:maxLines="1"
+                        android:text="lorem ipsom dolor sitamet, consectetur adips"
+                        android:textColor="@color/quantum_grey"
+                        android:textSize="@dimen/_10sdp" />
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tvAddID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/llView"
+                    android:textAlignment="viewStart"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginTop="@dimen/_4sdp"
+                    android:layout_marginBottom="@dimen/_7sdp"
+                    android:fontFamily="@font/roboto_regular"
+                    android:maxLines="2"
+                    android:text="Ad ID:ng3D5hAMHPajQrM"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/_11sdp" />
+
+                <ImageView
+                    android:id="@+id/imgAddListitemOptions"
+                    android:layout_width="@dimen/_17sdp"
+                    android:layout_height="@dimen/_50sdp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_dot_options_grey"
+                    android:visibility="visible"
+                    android:layout_alignParentEnd="true" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

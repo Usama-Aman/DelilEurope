@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">DalilEurope</string>
+    <string name="link_terms_and_conditions">https://elxdrive.com/dalieurope/pages/terms-of-service-and-use</string>
+    <string name="default_notification_channel_id">1</string>
+
+    <string name="action_settings">الإعدادت</string>
+    <string name="tv_log_in">تسجيل الدخول</string>
+    <string name="tv_register">تسجيل</string>
+    <string name="tv_email">عنوان البريد الإلكتروني</string>
+    <string name="tv_otp_code">رمز كلمة المرور لمرة واحدة</string>
+    <string name="tv_password">كلمة المرور</string>
+    <string name="tv_forgot_pass">هل نسيت كلمة المرور</string>
+    <string name="tv_need_account">هل تحتاج إلى حساب لدى دليل أوروبا</string>
+    <string name="tv_create_account">أنشأ حساب</string>
+    <string name="tv_new_password">كلمة مرور جديدة</string>
+    <string name="tv_first_name">الإسم</string>
+    <string name="tv_last_name">الكنية</string>
+    <string name="tv_confirm_pass">تأكيد كلمة المرور</string>
+    <string name="tv_already_account">هل تملك حساب لدينا؟</string>
+    <string name="tv_sign_in">تسجيل الدخول</string>
+    <string name="tv_sign_up">تسجيل الخروج</string>
+    <string name="tv_i_agree">أنا موافق على</string>
+    <string name="tv_terms_and_conditions">بنود و شروط الإستخدام</string>
+    <string name="tv_err_msg_password_empty">لابد من إدخال كلمة المرور</string>
+    <string name="tv_err_msg_password_confirm_empty">لابد من تأكيد كلمة المرور</string>
+    <string name="tv_err_msg_otp_empty_code">لابد من استخدام كلمة المرور المعطاة لمرة واحدة </string>
+    <string name="tv_err_msg_otp_code">الحد الأدنى أربع أحرف</string>
+    <string name="tv_err_msg_password">الحد الأدنى 6 أحرف</string>
+    <string name="tv_err_msg_confirm_password">كلمة المرور المكررة لا تتطابق مع كلمة المرور الأساسية</string>
+    <string name="tv_err_msg_email_empty">يتوجب إدخال البريد الإلكتروني</string>
+    <string name="tv_err_msg_email">يتوجب إدخال بريد إلكتروني صالح</string>
+    <string name="tv_err_msg_name">لا يمكن ترك الإسم فارغ</string>
+    <string name="tv_back_to_login">العودة إلى تسجيل الدخول</string>
+    <string name="tv_forgot_password">هل نسيت كلمة المرور</string>
+    <string name="tv_reset_password">إعادة تعيين كلمة كلمة المرور</string>
+    <string name="tv_change_password">تغيير كلمة المرور</string>
+    <string name="tv_send">إرسال</string>
+    <string name="tv_reset">إعادة تعيين</string>
+    <string name="tv_location">الموقع..</string>
+    <string name="menu_home">الرئيسية</string>
+    <string name="menu_profile">حسابي الشخصي</string>
+    <string name="menu_business_profile">حساب الشركة</string>
+    <string name="menu_my_ads">إعلاناتي المبوبة</string>
+    <string name="menu_messages">الرسائل</string>
+    <string name="menu_my_favourites">قائمة المفضلة</string>
+    <string name="menu_privacy_settings">ساسية الخصوصية</string>
+    <string name="menu_change_password">تغيير كلمة المرور</string>
+    <string name="menu_about_us">من نحن</string>
+    <string name="menu_advertise_us">أعلن معنا</string>
+    <string name="menu_questions_answers">أسئلة و أجوبة</string>
+    <string name="menu_contact_us">إتصل بنا</string>
+    <string name="menu_logout">خروج</string>
+    <string name="openDrawer">إفتح الكشف</string>
+    <string name="closeDrawer">أغلق الكشف</string>
+    <string name="tv_dashboard_head">بيع، شراء، و إيجاد كل ما تحتاج إليه  \nWhat You need</string>
+    <string name="tv_send_review">أدخل رأيك</string>
+
+    <string name="alert_success">تم النجاح</string>
+    <string name="alert_ok">تم</string>
+    <string name="alert_error">خطأ</string>
+    <string name="alert_request_timeout"> إنتهت مهلة الطلب</string>
+    <string name="alert_internet_connection">إن إتصالك مع الإنترنت يبدو ضعيفاً، يرجى التحقق منه</string>
+    <string name="alert_information">خطأ</string>
+    <string name="alert_api_not_found"> </string>
+    <string name="alert_bad_request">إستجابة ضعيفة، يرجى التحقق من صحة طلبك</string>
+    <string name="alert_internal_server_error">خطأ في المخدم الداخلي</string>
+    <string name="alert_msg_unknown">تم إيجاد خطأ غير معروف</string>
+    <string name="error_msg_unauthorized_user">مستخدم غير مرخص له أو كلمة مرور غير صحيحة. </string>
+    <string name="tv_search">البحث</string>
+    <string name="tv_more">المزيد</string>
+    <string name="tv_featured">الخصائص</string>
+    <string name="alert_terms_conditions">الرجاء التحقق من بنود و شروط الإستخدام</string>
+    <string name="tv_categories">التصنيفات</string>
+    <string name="tv_submit">إرسال</string>
+    <string name="no_data_found_text">لم يتم إيجاد أي بيانات بعد</string>
+    <string name="alert_logout_txt"> هل انت متأكد انك تريد تسجيل الخروج</string>
+    <string name="alert_logout">تسجيل الخروج</string>
+    <string name="alert_logout_cancel">إلغاء</string>
+    <string name="tv_filter">تصفية</string>
+    <string name="tv_comments">تعليقات</string>
+    <string name="tv_views">مشاهدات</string>
+    <string name="tv_likes">إعجاب</string>
+    <string name="tv_order">طلبيات</string>
+    <string name="tv_sort">مصنفة حسب</string>
+    <string name="tv_a_z">أ إلى ي</string>
+    <string name="tv_z_a">أ إلى ي</string>
+    <string name="tv_distance">المسافة</string>
+    <string name="tv_rating">التقييم</string>
+    <string name="tv_permission_needed">تحتاج موافقة</string>
+    <string name="tv_permission_detail">هذا التطبيق يحتاج إلى الحصول على موافقتك؟ هل تريد منحها الترخيص؟</string>
+    <string name="tv_ok">تم</string>
+    <string name="tv_not">ليس الآن</string>
+
+    <string name="message_frag_title">الرسائل</string>
+    <string name="search_message">البحث</string>
+    <string name="loading">التحميل</string>
+    <string name="loading_please_wait">يتم التحميل الآن. من فضلك إنتظر</string>
+    <string name="success">تم النجاح</string>
+    <string name="error">خطأ</string>
+    <string name="sure_to_del"> هل تريد بالتأكيد إلغاء هذه العملية؟ </string>
+    <string name="ok">تم</string>
+    <string name="cancel">إلغاء</string>
+    <string name="send_message">إرسال رسالة</string>
+    <string name="tv_search_results">إبحث عن نتائج \n</string>
+    <string name="new_message">رسالة جديدة</string>
+    <string name="title_messages">الرسائل</string>
+    <string name="tv_categories_colon">التصنيفات:</string>
+    <string name="tv_languages">اللغات اللتي نتكلمها</string>
+    <string name="tv_info">المعلومات العامة</string>
+    <string name="tv_services">الخدمات</string>
+    <string name="tv_price">السعر</string>
+    <string name="tv_business_hours">ساعات العمل</string>
+    <string name="tv_payment_method">طرق الدفع</string>
+    <string name="tv_other_information">المعلومات الأخرى</string>
+    <string name="tv_write_review">إكتب تقييم</string>
+    <string name="tv_overall_rating">تقييمك العام</string>
+    <string name="tv_add_photo">أضف صورة (إختياري)</string>
+    <string name="tv_type_message">عنوان التقييم</string>
+    <string name="error_msg_review_note_required"> لابد من إدخال علامة للتقييم</string>
+    <string name="error_msg_review_rating_required">لابد من إدخال التقييم</string>
+    <string name="msg_google_apps_not_found">لم يتم إيجاد تطبيق خريطة غوغل</string>
+    <string name="tv_rating_and_reviews">التقييم و المراجعات</string>
+    <string name="alert_no_information_provided">لا توجد معلومات متوفرة</string>
+    <string name="tv_ads_detail">تفاصيل</string>
+    <string name="tv_photos">الصور</string>
+    <string name="tv_gallery">المنصة</string>
+    <string name="tv_inquiry">إستفسار</string>
+    <string name="tv_posted_by">منشورة من قبل</string>
+    <string name="addlisting_title">إعلاناتي المدفوعة</string>
+    <string name="menu_active">فعال</string>
+    <string name="menu_view">مشاهدة</string>
+    <string name="menu_del">إلغاء</string>
+    <string name="menu_edit">تعديل</string>
+    <string name="contact_us_title">إتصل بنا</string>
+    <string name="phone_txt">رقم الهاتف</string>
+    <string name="description_text">الوصف</string>
+    <string name="save">إحفظ</string>
+    <string name="about_us">من نحن</string>
+    <string name="advertise_with_us">أعلن معنا عن مشروعك</string>
+    <string name="questions__and_answers">أسئلة و أجوبة</string>
+    <string name="privacy_police">سياسة الخصوصية</string>
+    <string name="terms_of_service_and_use">بنود و شروط الإستخدام</string>
+    <string name="contact_us">إتصل بنا</string>
+    <string name="tv_member_since">عضو منذ </string>
+    <string name="error_message_required">لابد من إدخال حقل الرسالة </string>
+    <string name="tv_ad_title">أضف عنوان</string>
+    <string name="tv_dPrice">سعر محسوم</string>
+    <string name="tv_done">تم</string>
+    <string name="tv_tagline">نص إضافي</string>
+    <string name="tv_website">الموقع الالكتروني</string>
+    <string name="tv_sub_categories">تصنيف فرعي</string>
+    <string name="tv_time">الوقت</string>
+    <string name="tv_end_date">تاريخ الإنتهاء</string>
+    <string name="tv_start_date">تاريخ البداية</string>
+    <string name="tv_description">الوصف</string>
+    <string name="tv_payment_methods">طرق الدفع</string>
+    <string name="tv_credit_card"> بطاقة إئتمانية </string>
+    <string name="tv_paypal">باي بال</string>
+    <string name="tv_master_card">بطاقة ماستر</string>
+    <string name="tv_make_ad_type">أضف لإعلانك تبويب و أجعله مميز عن غيره/Featured</string>
+    <string name="tv_none">لايوجد</string>
+    <string name="tv_highlighted">مميز عن غيره بالتظليل</string>
+    <string name="tv_featured_price">المميزات</string>
+    <string name="tv_ad_images">أضف صور(maximum of 5 images) </string>
+    <string name="tv_save">أحفظ</string>
+    <string name="tv_select_category">إختر تصنيف</string>
+    <string name="error_title_required">لابد من إدخال العنوان</string>
+    <string name="error_category_required">يرجى إختيار التصنيف</string>
+    <string name="error_category_sub_required">يرجى إختيار التصنيف الفرعي</string>
+    <string name="error_tagline_required">لابد من كتابة موجز عن الإعلان</string>
+    <string name="error_location_required">لابد من تحديد الموقع</string>
+    <string name="error_select_location_required">يرجى إدخال موقع صحيح</string>
+    <string name="error_website_required">لابد من إدخال صفحة الإنترنت الخاصة بكم</string>
+    <string name="error_price_required">لابد من إدخال السعر</string>
+    <string name="error_desc_required">لابد من إدخال الوصف </string>
+    <string name="error_dPrice_required">لابد من إدخال السعر المحسوم</string>
+    <string name="error_start_date_required">لابد من إدخال تاريخ البدء</string>
+    <string name="error_service_required">لابد من إدخال نوع الخدمة</string>
+    <string name="error_languages_required">لابد من تحديد اللغة</string>
+    <string name="msg_enable_gps">الرجاء أغلق تتطبيق (جهاز تحديد الموقع) </string>
+    <string name="msg_some_went_wrong"> هناك خطأ ما. حاول مرة اخرى </string>
+    <string name="error_msg_address_not_found">لم يتم إيجاد أي عنوان. يرجى التأكد أنك متصل مع الإنترنت</string>
+    <string name="error_please_add_valid_business_featured_required">عنوان الشركة مطلوب</string>
+    <string name="error_msg_pick_location">يرجى إدخال عنوان صالح</string>
+    <string name="alert_finish_uploading">يرجى الإنتظار حتى يتم التحميل...</string>
+    <string name="tv_choose_gallery">إختر من مجموعة الصور</string>
+    <string name="tv_open_camera">إفتح الكاميرا</string>
+
+    <string name="tv_feature_name">الإسم</string>
+    <string name="tv_feature_yes_no">نعم او لا</string>
+
+    <string name="error_feature_required">نوع الشركة مطلوب</string>
+    <string name="tv_update_ad">قم بتحديث الإعلان المبوب</string>
+    <string name="tv_post_ad">إرفع إعلانك المبوب</string>
+    <string name="tv_pick_location">إختر موقعك</string>
+
+
+    <!--    // profile-->
+    <string name="tv_address">العنوان</string>
+    <string name="tv_country">الدولة</string>
+    <string name="tv_state">الولاية</string>
+    <string name="tv_city">المدينة</string>
+    <string name="tv_zipcode">رمز الرقم البريدي</string>
+    <string name="tv_aboutme">لمحة عني</string>
+    <string name="select_country">إختر دولة</string>
+    <string name="select_state">إختر ولاية</string>
+    <string name="select_city">إختر مدينة</string>
+    <string name="done">تم</string>
+    <string name="permission_denied">تم رفض الإعلان</string>
+    <string name="tv_err_msg_last_name"> لابد من إدخال الكنية</string>
+    <string name="tv_err_msg_phone">لابد من إدخال رقم الهاتف</string>
+    <string name="tv_err_msg_zipcode">لابد من إدخال الرمز البريدي</string>
+    <string name="tv_err_msg_country">لابد من إدخال الدولة</string>
+    <string name="tv_err_msg_state">لابد من إدخال الولاية</string>
+    <string name="tv_err_msg_city">لابد من إدخال المدينة</string>
+    <string name="tv_err_msg_address">لابد من إدخال العنوان/string></string>
+    <string name="tv_err_organization_number">لابد من إدخال رقم المنظمة أو الشركة</string>
+
+    <string name="german">ألماني</string>
+    <string name="swedish">سويدي</string>
+    <string name="english">إنكليزي</string>
+    <string name="arabic">عربي</string>
+    <string name="select_the_language_you_want_to_use_in_the_app">إختر اللغة اللتي تود إستخدامها في التطبيق</string>
+    <string name="error_msg_url_no_valid">الرابط غير صالح</string>
+    <string name="error_website_valid_required">الرجاء إدخال موقع الكتروني صالح</string>
+
+    <!--    // business profile-->
+    <string name="tv_business_name">إسم الشركة</string>
+    <string name="hint_category">التصنيفات</string>
+    <string name="tv_category">إختر أحد التصنيفات</string>
+
+    <string name="hint_sub_category">التصنيفات الفرعية</string>
+    <string name="tv_sub_category">إختر أحد التصنيفات الفرعية</string>
+    <string name="hint_business_email">إدخل إيميل الشركة</string>
+    <string name="tv_business_email">email@address.com</string>
+
+    <string name="hint_website">الموقع الإلكتروني</string>
+    <string name="tv_business_website">www.website.com</string>
+
+    <string name="tv_business_hours_profile">ساعات العمل</string>
+
+    <string name="tv_monday">الإثنين</string>
+    <string name="tv_tuesday">الثلاثاء</string>
+    <string name="tv_wednesday">الأربعاء</string>
+    <string name="tv_thursday">الخميس</string>
+    <string name="tv_friday">الجمعة</string>
+    <string name="tv_saturday">السبت</string>
+    <string name="tv_sunday">الأحد</string>
+
+    <string name="tv_start_time">تاريخ البدء</string>
+    <string name="tv_end_time">تاريخ الإنتهاء</string>
+
+    <string name="tv_i_want_to_post">أرغب في وضع إعلان مبوب(10\u0024/تتضمن جميع المميزات)</string>
+    <string name="tv_about_business">لمحة عن الشركة</string>
+
+    <string name="tv_time_error">تاريخ الإنتهاء يجب أن يكون أكبر من تاريخ البدء</string>
+
+    <string name="tv_business_features">نوع الشركة</string>
+    <string name="msg_no_business_account">الرجاء أنشأ حساب للشركة من أجل إضاعة إعلان مبوب أو بيع منتجاتك أو خدماتك مباشرة</string>
+    <string name="msg_business_no_paid">لم يتم إيجاد وصف شركة مماثلة لما تبحث عنه</string>
+    <string name="msg_business_subscription_expired">أنت لا تملك حساب شركة لدينا أو إنتهت صلاحية حساب الشركة الخاص بكم</string>
+
+
+    <string name="tv_subscriptions_plan">إختر أحد الخطط الموضوعة للدفع</string>
+
+    <string name="tv_err_msg_business_name">لابد من إدخال اسم الشركة</string>
+    <string name="tv_err_msg_category">لابد من إدخال التصنيف</string>
+    <string name="tv_err_msg_sub_category">لابد من إدخال تصنيف فرعي</string>
+    <string name="tv_err_msg_business_email">الإيميل التجاري لايتوجب أن يكون فارغا</string>
+    <string name="tv_err_msg_website">الموقع الإلكتروني لا يتوجب أن يكون فارغا</string>
+
+    <string name="tv_err_msg_subscription">الرجاء إختر أحد أنواع الإشتراكات المتاحة</string>
+
+    <string name="tv_not_active">مغلق</string>
+    <string name="tv_active">إفتح الآن</string>
+
+    <string name="tv_in_active">غير مفعل</string>
+    <string name="tv_location_not_found">لم يتم تقديم العنوان</string>
+
+    <string name="pay_save">إدفع و إحفظ التغييرات</string>
+    <string name="msg_error_payment_false"> تم إدخال وسيلة دفع غير صحيحة أو منتيهة الصلاحية </string>
+    <string name="msg_error_payment_canceled">تم إلغاء الدفع</string>
+    <string name="msg_error_payment_failure">خطأ خارجي حدث لطريقة الدفع باي بال، يرجى المحاولة لاحقا مرة ثانية</string>
+
+    <string name="msg_error_discount_price">السعر المحسوم لابد من أن يكون أصغر من السعر الأساسي</string>
+    <string name="msg_error_price">السعر الأساسي لابد أن يكون أكبر من السعر المحسوم </string>
+    <string name="msg_error_end_date">الرجاء إدخال تاريخ صالح</string>
+    <string name="msg_error_ad_expire">لايمكن تغييرها كإعلان مبوب مدفوع لأنو تم إنتهاء صلاحية إعلانك</string>
+    <string name="num_e1_n1">%s</string>
+    <string name="tv_err_business_detail">تفاصيل المشروع مطلوبة</string>
+    <string name="tv_current_password">كلمة المرور الحالية</string>
+
+    <string name="lbl_take_camera_picture">قم بإلتقاط صورة</string>
+    <string name="lbl_choose_from_gallery">إختر من بين الصور الموجودة</string>
+    <string name="toast_image_intent_null"> خيارمنتقي الصور مفقود! </string>
+    <string name="lbl_set_profile_photo">قم بوضع صورة لحسابك</string>
+    <string name="tv_business_detail">لابد من إدخال التفاصيل</string>
+    <string name="tv_confirm_new_password">تأكيد كلمة المرور الجديدة</string>
+    <string name="tv_current_password_required">كلمة المرور الحالية مطلوبة</string>
+    <string name="tv_title_message"> أضف عنوان مراجعة الخدمة أو المنتج</string>
+    <string name="tv_review_message">أضف مراجعة للخدمة أو للمنتج</string>
+    <string name="tv_additional_review">تقييم إضافي</string>
+    <string name="tv_expert">خبرة </string>
+    <string name="tv_professionalism">إحترافية</string>
+    <string name="error_msg_review_title_required">لابد من إدخال العنوان</string>
+    <string name="tv_overall">بصورة عامة</string>
+    <string name="tv_professional">إحترافي</string>
+    <string name="tv_post_ads">روج لإعلانك المبوب هنا</string>
+    <string name="tv_ad_id">رقم الإعلان المبوب: </string>
+    <string name="tv_message">الرسالة</string>
+
+    <string name="tv_msg_error" translatable="false">خطأ</string>
+    <string name="tv_msg_info" translatable="false">معلومات</string>
+    <string name="tv_price_title"> السعر</string>
+    <string name="tv_additional_review_optional"> (إختياري)</string>
+    <string name="no_ads_found_text">لم يتم إيجاد أي إعلان مبوب</string>
+    <string name="no_message_found_text">لم يتم إيجاد أي رسالة</string>
+    <string name="tv_type_message_2">أكتب رسالة</string>
+    <string name="tv_select_sub">إختار تصنيف فرعي</string>
+    <string name="tv_subscription_text">أريد أن أضع إعلان مبوب (</string>
+    <string name="no_reviews_found_text">لم يتم إيجاد أي مراجعات</string>
+    <string name="tv_months">الأشهر</string>
+    <string name="tv_month">الشهر</string>
+    <string name="tv_organization_number">رقم المنظمة</string>
+
+    <string name="invalid_card" translatable="false">بطاقة غير صالحة</string>
+    <string name="stip_pb_key" translatable="false">pk_test_zWDMYe7tP1PgZ22mfuu3qhIV</string>
+    <string name="stip_sk_key" translatable="false">sk_test_wcjDUR4RyLKM5vFYvFlEGcDo</string>
+    <string name="paypal_pay_save">إدفع عن طريق باي بال و إحفظ التغييرات</string>
+    <string name="strip_pay_save">إدفع عن طريقة البطاقة الائتمانية و إحفظ التغيرات</string>
+
+
+    <string name="title_paypal">طريق الدفع باي بال</string>
+    <string name="title_strip">طريقة الدفع بطاقات بنك</string>
+
+
+    <string name="labelRegularPrice">السعر النظامي: </string>
+    <string name="labelDiscountedPrice">السعر المحسوم: </string>
+
+
+
+
+</resources>
+

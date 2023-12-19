@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <color name="colorPrimary">#1c76b6</color>
+    <color name="colorPrimaryDark">#23689b</color>
+    <color name="colorAccent">#1c76b6</color>
+    <color name="colorDefaultText">#3a3939</color>
+    <color name="alert_dialog_error">#FF5B41</color>
+    <color name="colorFieldsBG">#f7f8fa</color>
+    <color name="colorLightGrey">#e9e9e9</color>
+    <color name="colorDarkGrey">#CBCBCB</color>
+    <color name="colorRed">#dc143c</color>
+    <color name="colorGreyWhite">#FEFEFE</color>
+    <color name="colorLightBlack">#423F3F</color>
+    <color name="color_off_white">#f1f5fa</color>
+    <color name="white">#FFFFFF</color>
+    <color name="alert_dialog_success">#1FB18A</color>
+    <color name="colorBlack">#090909</color>
+    <color name="colorTextGrey">#bcbcbc</color>
+    <color name="colorDividersCard">#dddddd</color>
+    <color name="colorHeaderGreen">#A5CB41</color>
+    <color name="colorGreyLightBlack">#686868</color>
+    <color name="colorKnob">#F4F4F4</color>
+    <color name="colorGray">#808080</color>
+    <color name="colorGrayLight">#CCC</color>
+    <color name="colorGrayLightMore">#F9F9F9</color>
+    <color name="colorSubCategoriesBG">#F7F7F7</color>
+    <color name="colorToggle">#F7F7F7</color>
+    <color name="colorToggleText">#c2c2c2</color>
+    <color name="colorHighlighted">#F4FAFF</color>
+    <color name="colorFeatured">#FFF4F6</color>
+    <color name="colorBlackGrey">#696969</color>
+    <color name="colorGreyBG">#fcfcfc</color>
+    <color name="colorImageBg">#F8F8F8</color>
+    <color name="colorDivider">#DEDEDE</color>
+    <color name="colorGreen">#97C324</color>
+    <color name="colorViewGreen">#96c322</color>
+    <color name="colorGreyText">#C2C2C2</color>
+    <color name="colorViewGrey">#c0c0c0</color>
+    <color name="colorOrange">#e09524</color>
+    <color name="add_listing_bg_color"> #f7f7f7</color>
+    <color name="colorGreyHintText">#888888</color>
+    <color name="colortransparent">#00000000</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="transparent">@android:color/transparent</color>
+
+    // styles
+    <color name="mtrl_textinput_default_box_stroke_color" tools:override="true">@color/colorLightGrey</color>
+
+</resources>

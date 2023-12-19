@@ -1,0 +1,96 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion "29.0.2"
+    defaultConfig {
+        applicationId "com.dalileuropeapps.dalileurope"
+        minSdkVersion 21
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    configurations.all {
+        resolutionStrategy.force 'com.google.code.findbugs:jsr305:1.3.9'
+    }
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation 'com.google.android.material:material:1.0.0'
+    implementation 'com.android.support:design:29.0.0-alpha1'
+    testImplementation 'junit:junit:4.12'
+    implementation 'com.android.support:cardview-v7:29.0.0-alpha1'
+    androidTestImplementation 'androidx.test:runner:1.1.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.1'
+    implementation 'com.github.bumptech.glide:glide:4.10.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.10.0'
+    implementation 'com.intuit.sdp:sdp-android:1.0.6'
+    implementation 'com.tapadoo.android:alerter:2.0.5'
+
+    implementation 'com.google.code.gson:gson:2.8.5'
+    implementation 'com.squareup.retrofit2:converter-gson:2.1.0'
+    implementation 'com.squareup.retrofit2:retrofit:2.1.0'
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.6.0'
+    implementation 'com.thoughtbot:expandablecheckrecyclerview:1.4'
+    implementation 'com.google.firebase:firebase-messaging:17.4.0'
+
+//    implementation 'com.google.android.gms:play-services-location:16.0.0'
+//    implementation 'com.google.android.gms:play-services-places:16.0.0'
+//    implementation 'com.google.android.libraries.places:places:1.0.0'
+
+    implementation 'com.google.android.gms:play-services-location:17.0.0'
+    implementation 'com.google.android.gms:play-services-places:17.0.0'
+    implementation 'com.google.android.libraries.places:places:1.0.0'
+    //GoogleService
+    implementation 'com.google.android.gms:play-services-maps:17.0.0'
+
+    implementation 'rebus:permission-utils:1.0.2'
+    implementation files('libs/nineoldandroids-2.4.0.jar')
+
+    // code generator for view
+    implementation "com.jakewharton:butterknife:10.1.0"
+    annotationProcessor "com.jakewharton:butterknife-compiler:10.1.0"
+    implementation 'com.github.chrisbanes:PhotoView:2.3.0'
+    implementation project(':circlepageindicator')
+    implementation 'androidx.palette:palette:1.0.0-alpha1'
+    implementation 'com.squareup.picasso:picasso:2.4.0'
+    implementation 'jp.wasabeef:picasso-transformations:2.1.0'
+    implementation 'com.squareup.okhttp3:okhttp:3.10.0'
+    implementation 'com.jakewharton.picasso:picasso2-okhttp3-downloader:1.1.0'
+    implementation 'com.ms-square:expandableTextView:0.1.4'
+    implementation 'com.paypal.sdk:paypal-android-sdk:2.16.0'
+
+// image picker
+    implementation 'com.github.dhaval2404:imagepicker-support:1.5'
+
+    //Payment Gateway
+    implementation 'com.stripe:stripe-android:11.1.4'
+    //dexter permissions
+    implementation "com.karumi:dexter:5.0.0"
+    implementation 'com.github.yalantis:ucrop:2.2.2'
+
+}
+// apply the Google Services Plugin
+apply plugin: 'com.google.gms.google-services'
+repositories {
+    mavenCentral()
+}

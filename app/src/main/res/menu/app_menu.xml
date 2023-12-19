@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <group
+        android:id="@+id/menu_13"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/tv_toolbar_home"
+            android:icon="@drawable/ic_home"
+            android:title="@string/menu_home"
+            app:actionLayout="@layout/layout_menu_right_arrow" />
+    </group>
+
+
+    <group
+        android:id="@+id/menu_1"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/tv_toolbar_profile"
+            android:icon="@drawable/ic_profile"
+            android:title="@string/menu_profile"
+            app:actionLayout="@layout/layout_menu_right_arrow" />
+    </group>
+
+
+    <group
+        android:id="@+id/menu_2"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/tv_toolbar_business_profile"
+            android:icon="@drawable/ic_business_profile"
+            android:title="@string/menu_business_profile"
+            app:actionLayout="@layout/layout_menu_right_arrow" />
+
+    </group>
+
+    <group
+        android:id="@+id/menu_14"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/tv_toolbar_post_ad"
+            android:icon="@drawable/ic_post_ads"
+            android:title="@string/tv_post_ad"
+            app:actionLayout="@layout/layout_menu_right_arrow" />
+
+    </group>
+
+    <group
+        android:id="@+id/menu_3"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/tv_toolbar_my_ads"
+            android:icon="@drawable/ic_ads"
+            android:title="@string/menu_my_ads"
+            app:actionLayout="@layout/layout_menu_right_arrow" />
+    </group>
+
+    <group
+        android:id="@+id/menu_4"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/tv_toolbar_messages"
+            android:icon="@drawable/ic_message"
+            android:title="@string/menu_messages"
+            app:actionLayout="@layout/layout_menu_right_arrow" />
+    </group>
+
+    <group
+        android:id="@+id/menu_5"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/tv_toolbar_my_favourites"
+            android:icon="@drawable/ic_favourites"
+            android:title="@string/menu_my_favourites"
+            app:actionLayout="@layout/layout_menu_right_arrow" />
+    </group>
+
+    <group
+        android:id="@+id/menu_6"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/tv_toolbar_privacy_settings"
+            android:icon="@drawable/ic_privacy_settings"
+            android:title="@string/menu_privacy_settings"
+            app:actionLayout="@layout/layout_menu_right_arrow" />
+    </group>
+
+    <group
+        android:id="@+id/menu_7"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/tv_toolbar_change_password"
+            android:icon="@drawable/ic_password"
+            android:title="@string/menu_change_password"
+            app:actionLayout="@layout/layout_menu_right_arrow" />
+    </group>
+
+    <group
+        android:id="@+id/menu_8"
+        android:checkableBehavior="single">
+        <item
+
+            android:id="@+id/tv_toolbar_about_us"
+            android:icon="@drawable/ic_about_us_new"
+            android:title="@string/menu_about_us"
+            app:actionLayout="@layout/layout_menu_right_arrow" />
+    </group>
+
+
+    <group
+        android:id="@+id/menu_9"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/tv_toolbar_advertise_us"
+            android:icon="@drawable/ic_advertise"
+            android:title="@string/menu_advertise_us"
+            app:actionLayout="@layout/layout_menu_right_arrow" />
+    </group>
+
+
+    <group
+        android:id="@+id/menu_10"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/tv_toolbar_questions_answers"
+            android:icon="@drawable/ic_questions_answers"
+            android:title="@string/menu_questions_answers"
+            app:actionLayout="@layout/layout_menu_right_arrow" />
+    </group>
+
+
+    <group
+        android:id="@+id/menu_11"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/tv_toolbar_contact_us"
+            android:icon="@drawable/ic_contact_us"
+            android:title="@string/menu_contact_us"
+            app:actionLayout="@layout/layout_menu_right_arrow" />
+    </group>
+
+
+    <group
+        android:id="@+id/menu_12"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/tv_toolbar_logout"
+            android:icon="@drawable/ic_logout"
+            android:title="@string/menu_logout"
+            app:actionLayout="@layout/layout_menu_right_arrow" />
+    </group>
+
+
+</menu>

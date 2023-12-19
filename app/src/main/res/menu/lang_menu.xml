@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+        <item
+            android:id="@+id/menuEnglish"
+            android:icon="@drawable/ic_flag_english_layer"
+            android:title="@string/english" />
+
+        <item
+            android:id="@+id/menuGermany"
+
+            android:icon="@drawable/ic_flag_german_layer"
+            android:title="@string/german" />
+
+        <item
+            android:id="@+id/menuSwedish"
+            android:icon="@drawable/ic_flag_swedish_layer"
+            android:title="@string/swedish" />
+        <item
+            android:id="@+id/menuArabic"
+            android:icon="@drawable/ic_arabic_2"
+            android:title="@string/arabic" />
+</menu>

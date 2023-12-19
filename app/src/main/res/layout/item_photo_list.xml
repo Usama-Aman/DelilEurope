@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/clGalleryDetails"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/ivGalleryImageDetails"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_marginTop="@dimen/_2sdp"
+        android:layout_marginRight="@dimen/_2sdp"
+        android:scaleType="fitXY"
+        android:src="@drawable/com_facebook_profile_picture_blank_portrait"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginEnd="@dimen/_2sdp" />
+
+    <ImageView
+        android:id="@+id/ivDelete"
+        android:layout_width="@dimen/_12sdp"
+        android:layout_height="@dimen/_12sdp"
+        android:layout_alignRight="@+id/ivUserImage"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="-4dp"
+        android:layout_marginRight="-12dp"
+        android:paddingLeft="1dp"
+        android:paddingRight="1dp"
+        android:paddingBottom="1dp"
+        android:tint="@color/colorGray"
+        android:visibility="gone"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_cross"
+        android:paddingEnd="1dp"
+        android:paddingStart="1dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_alignEnd="@+id/ivUserImage"
+        android:layout_marginEnd="-12dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

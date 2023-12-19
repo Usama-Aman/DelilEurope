@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/_12sdp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clMessage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/reviewTitleMessage"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_12sdp"
+            android:layout_marginLeft="@dimen/_12sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginEnd="@dimen/_12sdp"
+            android:layout_marginRight="@dimen/_12sdp"
+            android:fontFamily="@font/roboto_regular"
+            android:paddingTop="@dimen/_12sdp"
+            android:paddingEnd="@dimen/_12sdp"
+            android:paddingRight="@dimen/_12sdp"
+            android:paddingBottom="@dimen/_4sdp"
+            android:text="@string/tv_posted_by"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12sdp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <RelativeLayout
+            android:id="@+id/rel1Message"
+            android:layout_width="@dimen/_55sdp"
+            android:layout_height="@dimen/_55sdp"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:layout_marginBottom="@dimen/_2sdp"
+            android:background="@color/colorImageBg"
+            app:layout_constraintLeft_toLeftOf="@id/reviewTitleMessage"
+            app:layout_constraintStart_toStartOf="@id/reviewTitleMessage"
+            app:layout_constraintTop_toBottomOf="@id/reviewTitleMessage">
+
+            <ImageView
+                android:id="@+id/imgUserProfileMessage"
+                android:layout_width="@dimen/_55sdp"
+                android:layout_height="@dimen/_55sdp"
+                android:layout_centerInParent="true"
+                android:scaleType="center"
+                android:src="@drawable/user_placeholder" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tvNameMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rel1Message"
+            android:layout_alignStart="@+id/rel1Message"
+            android:layout_alignLeft="@+id/rel1Message"
+            android:layout_alignEnd="@+id/rel1Message"
+            android:layout_alignRight="@+id/rel1Message"
+            android:fontFamily="@font/roboto_bold"
+            android:gravity="center"
+            android:singleLine="false"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="@dimen/_8sdp"
+            app:layout_constraintEnd_toEndOf="@+id/rel1Message"
+            app:layout_constraintLeft_toLeftOf="@+id/rel1Message"
+            app:layout_constraintRight_toRightOf="@+id/rel1Message"
+            app:layout_constraintStart_toStartOf="@+id/rel1Message"
+            app:layout_constraintTop_toBottomOf="@+id/rel1Message" />
+
+
+        <TextView
+            android:id="@+id/reviewSubTitleMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_regular"
+            android:paddingTop="@dimen/_12sdp"
+            android:paddingEnd="@dimen/_12sdp"
+            android:paddingRight="@dimen/_12sdp"
+            android:paddingBottom="@dimen/_12sdp"
+            android:text="@string/tv_inquiry"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12sdp"
+            app:layout_constraintLeft_toRightOf="@id/reviewTitleMessage"
+            app:layout_constraintStart_toEndOf="@id/reviewTitleMessage"
+            app:layout_constraintTop_toTopOf="@id/reviewTitleMessage" />
+
+
+        <EditText
+            android:id="@+id/etMessage"
+            android:layout_width="@dimen/_200sdp"
+            android:layout_height="@dimen/_150sdp"
+            android:layout_weight="1"
+            android:background="@drawable/shape_rounde_button"
+            android:focusableInTouchMode="true"
+            android:fontFamily="@font/roboto_regular"
+            android:gravity="start|top"
+            android:hint="@string/tv_type_message_2"
+            android:inputType="textMultiLine"
+            android:maxLines="10000"
+            android:padding="@dimen/_12sdp"
+            android:scrollbars="vertical"
+            android:scrollHorizontally="false"
+            android:textAlignment="viewStart"
+            android:textColor="@color/colorDefaultText"
+            android:textColorHint="@color/colorTextGrey"
+            android:textIsSelectable="true"
+            android:textSize="@dimen/_12sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/rel1Message"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintStart_toEndOf="@id/rel1Message"
+            app:layout_constraintTop_toBottomOf="@+id/reviewSubTitleMessage" />
+
+        <TextView
+            android:id="@+id/tvImageMessage"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:drawableStart="@drawable/ic_location_pin_search_small"
+            android:drawableLeft="@drawable/ic_location_pin_search_small"
+            android:drawablePadding="@dimen/_2sdp"
+            android:drawableTint="@color/colorPrimary"
+            android:fontFamily="@font/roboto_regular"
+            android:gravity="start|center_vertical"
+            android:paddingTop="@dimen/_12sdp"
+            android:paddingEnd="@dimen/_12sdp"
+            android:paddingRight="@dimen/_12sdp"
+            android:paddingBottom="@dimen/_12sdp"
+            android:singleLine="false"
+            android:text="@string/tv_add_photo"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12sdp"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etMessage" />
+
+
+        <Button
+            android:id="@+id/btSubmitMessage"
+            style="@style/BlueBgButton"
+            android:layout_width="@dimen/_200sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_gravity="center_horizontal"
+
+            android:layout_marginTop="@dimen/_16sdp"
+
+            android:background="@drawable/shape_rounde_button"
+            android:fontFamily="@font/roboto_semibold"
+            android:text="@string/tv_send"
+
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/_14sdp"
+            app:layout_constraintEnd_toEndOf="@+id/etMessage"
+            app:layout_constraintStart_toStartOf="@+id/etMessage"
+            app:layout_constraintTop_toBottomOf="@+id/tvImageMessage" />
+
+        <ImageView
+            android:id="@+id/ivSendMessage"
+            android:layout_width="@dimen/_16sdp"
+            android:layout_height="@dimen/_16sdp"
+            android:src="@drawable/ic_send"
+            android:tint="@color/colorPrimaryDark"
+            android:translationZ="@dimen/_2sdp"
+            app:layout_constraintBottom_toBottomOf="@+id/btSubmitMessage"
+            app:layout_constraintEnd_toStartOf="@+id/guideline"
+            app:layout_constraintRight_toLeftOf="@+id/guideline"
+            app:layout_constraintTop_toTopOf="@+id/btSubmitMessage" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.54" />
+
+        <TextView
+            android:id="@+id/tvMessageError"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:drawableStart="@drawable/ic_location_pin_search_small"
+            android:drawableLeft="@drawable/ic_location_pin_search_small"
+            android:drawablePadding="@dimen/_2sdp"
+            android:drawableTint="@color/colorPrimary"
+            android:fontFamily="@font/roboto_regular"
+            android:gravity="start|center_vertical"
+            android:paddingTop="@dimen/_12sdp"
+            android:paddingEnd="@dimen/_12sdp"
+            android:paddingRight="@dimen/_12sdp"
+            android:paddingBottom="@dimen/_12sdp"
+            android:singleLine="false"
+            android:text="@string/tv_add_photo"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12sdp"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etMessage" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>

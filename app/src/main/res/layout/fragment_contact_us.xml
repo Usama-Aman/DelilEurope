@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorGreyWhite"
+    android:fillViewport="true"
+    android:scrollbars="none"
+    tools:ignore="MissingPrefix">
+
+    <RelativeLayout
+        android:id="@+id/rlMainView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:fitsSystemWindows="true"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:layout_marginRight="@dimen/_15sdp"
+            android:orientation="vertical"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginEnd="@dimen/_15sdp">
+
+            <ImageView
+                android:id="@+id/ivAuthLogo"
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="@dimen/_100sdp"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_55sdp"
+                app:srcCompat="@drawable/logo_app" />
+
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ivAuthLogo"
+                android:layout_marginTop="@dimen/_24sdp"
+                android:fontFamily="@font/roboto_bold"
+                android:gravity="center"
+                android:text="@string/contact_us_title"
+                android:textAllCaps="true"
+                android:textColor="@color/colorLightBlack"
+                android:textSize="@dimen/_16sdp" />
+
+
+            <RelativeLayout
+                android:id="@+id/rlForm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="@dimen/_18sdp">
+
+
+                <RelativeLayout
+                    android:id="@+id/llFields"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/inputLayoutFirstName"
+                        style="@style/TextInputLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/_5sdp"
+                        android:clipChildren="false"
+                        android:layout_marginEnd="@dimen/_5sdp">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/etFirstName"
+                            android:layout_width="match_parent"
+                            android:textAlignment="viewStart"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/tv_first_name"
+                            android:inputType="text"
+                            android:textCursorDrawable="@null"
+                            android:textSize="@dimen/_11sdp" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/inputLayoutPhone"
+                        style="@style/TextInputLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/inputLayoutFirstName"
+                        android:layout_marginTop="@dimen/_9sdp"
+                        android:layout_marginRight="@dimen/_5sdp"
+                        android:clipChildren="false"
+                        android:layout_marginEnd="@dimen/_5sdp">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/etPhone"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="viewStart"
+                            android:hint="@string/phone_txt"
+                            android:inputType="phone"
+                            android:textCursorDrawable="@null"
+                            android:textSize="@dimen/_11sdp" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/inputLayoutEmail"
+                        style="@style/TextInputLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/inputLayoutPhone"
+                        android:layout_marginTop="@dimen/_9sdp"
+                        android:layout_marginRight="@dimen/_5sdp"
+                        android:clipChildren="false"
+                        android:layout_marginEnd="@dimen/_5sdp">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/etEmail"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="viewStart"
+                            android:hint="@string/tv_email"
+                            android:inputType="textEmailAddress"
+                            android:textCursorDrawable="@null"
+                            android:textSize="@dimen/_11sdp" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/inputLayoutDescription"
+                        style="@style/TextInputLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/inputLayoutEmail"
+                        android:layout_marginTop="@dimen/_9sdp"
+                        android:layout_marginRight="@dimen/_5sdp"
+                        android:clipChildren="false"
+                        android:layout_marginEnd="@dimen/_5sdp">
+
+                        <com.google.android.material.textfield.TextInputEditText
+
+                            android:id="@+id/etDescription"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="viewStart"
+
+                            android:hint="@string/description_text"
+                            android:inputType="text"
+                            android:textCursorDrawable="@null"
+                            android:textSize="@dimen/_11sdp" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/inputLayoutConfirmPassword"
+                        style="@style/TextInputLayout"
+                        android:visibility="gone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/inputLayoutPassword"
+                        android:layout_marginTop="@dimen/_9sdp"
+                        android:layout_marginRight="@dimen/_5sdp"
+                        android:clipChildren="false"
+                        android:layout_marginEnd="@dimen/_5sdp">
+
+                        <com.google.android.material.textfield.TextInputEditText
+
+                            android:id="@+id/etConfirmPassword"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/tv_confirm_pass"
+                            android:textAlignment="viewStart"
+                            android:inputType="textPassword"
+                            android:textCursorDrawable="@null"
+                            android:textSize="@dimen/_11sdp" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                </RelativeLayout>
+
+
+
+
+                <Button
+                    android:id="@+id/btnSave"
+                    style="@style/BlueBgButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_below="@id/llFields"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/_18sdp"
+                    android:fontFamily="@font/roboto_regular"
+                    android:text="@string/save"
+                    android:textSize="@dimen/_12sdp" />
+
+
+            </RelativeLayout>
+
+
+
+        </LinearLayout>
+
+
+        <include
+            layout="@layout/progress_bar_generic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+    </RelativeLayout>
+
+
+</ScrollView>

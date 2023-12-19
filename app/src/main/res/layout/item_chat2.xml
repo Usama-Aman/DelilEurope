@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_50sdp"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:layout_toLeftOf="@+id/imgUserProfile"
+            android:background="@drawable/right"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/_15sdp"
+            android:paddingTop="@dimen/_10sdp"
+            android:paddingRight="@dimen/_10sdp"
+            android:paddingBottom="@dimen/_10sdp"
+            android:paddingEnd="@dimen/_10sdp"
+            android:layout_marginStart="@dimen/_50sdp"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:paddingStart="@dimen/_15sdp"
+            android:layout_toStartOf="@+id/imgUserProfile">
+
+            <TextView
+
+                android:id="@+id/tvMessage"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="viewStart"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:fontFamily="@font/roboto_regular"
+                android:text="He is good boy , he lives in lahore"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_12sdp"
+                android:layout_marginEnd="@dimen/_5sdp" />
+
+            <TextView
+                android:id="@+id/tvDateTime"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:fontFamily="@font/roboto_regular"
+                android:textAlignment="viewStart"
+                android:text="He is good boy , he lives in lahore"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_5sdp" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imgUserProfile"
+            android:layout_width="@dimen/_45sdp"
+            android:layout_height="@dimen/_55sdp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:background="@drawable/user_placeholder"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="@dimen/_10sdp" />
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,73 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llItem"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:orientation="horizontal"
+    android:weightSum="2">
+
+    <LinearLayout
+        android:id="@+id/llOne"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <TextView
+            android:id="@+id/tvDayNameOne"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start|center_vertical"
+            android:textAlignment="viewStart"
+            android:layout_weight="0.8"
+            android:fontFamily="@font/roboto_bold"
+            android:textColor="@color/colorDefaultText"
+            android:textSize="@dimen/_10sdp" />
+
+        <TextView
+            android:id="@+id/tvTimeOne"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textAlignment="viewStart"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_weight="1.2"
+            android:fontFamily="@font/roboto_regular"
+            android:textColor="@color/colorDefaultText"
+            android:textSize="@dimen/_10sdp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llTwo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_3sdp"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <TextView
+            android:id="@+id/tvDayNameTwo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:textAlignment="viewStart"
+            android:layout_weight="0.8"
+            android:fontFamily="@font/roboto_bold"
+            android:textColor="@color/colorDefaultText"
+            android:textSize="@dimen/_10sdp" />
+
+        <TextView
+            android:id="@+id/tvTimeTwo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textAlignment="viewStart"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_weight="1.2"
+            android:fontFamily="@font/roboto_regular"
+            android:textColor="@color/colorDefaultText"
+            android:textSize="@dimen/_10sdp" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,100 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/llFeatured"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_grey_shadow">
+
+    <RelativeLayout
+        android:id="@+id/rlFeatured"
+        android:layout_width="@dimen/_150sdp"
+        android:layout_height="@dimen/_190sdp"
+        android:layout_gravity="center">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/ivImageFeatured"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_80sdp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:scaleType="center"
+                android:src="@drawable/ic_image_placeholder" />
+
+
+            <ImageView
+                android:id="@+id/ivLogoFeatured"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_below="@id/ivImageFeatured"
+                android:layout_marginLeft="@dimen/featured_title_padding"
+                android:layout_marginTop="@dimen/_8sdp"
+
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_image_placeholder_small"
+                android:layout_marginStart="@dimen/featured_title_padding" />
+
+
+            <TextView
+                android:id="@+id/tvTitleFeatured"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ivLogoFeatured"
+                android:textAlignment="viewStart"
+                android:background="@android:color/transparent"
+                android:fontFamily="@font/roboto_bold"
+                android:paddingLeft="@dimen/featured_title_padding"
+                android:paddingTop="@dimen/_10sdp"
+                android:paddingRight="@dimen/featured_title_padding"
+                android:paddingBottom="@dimen/_10sdp"
+                android:textColor="@color/colorDefaultText"
+                android:textSize="@dimen/featured_title"
+                android:paddingEnd="@dimen/featured_title_padding"
+                android:paddingStart="@dimen/featured_title_padding" />
+
+
+            <View
+                android:id="@+id/vLine1Featured"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/tvTitleFeatured"
+                android:background="@color/colorDividersCard" />
+
+            <View
+                android:id="@+id/vLine2Featured"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/vLine1Featured"
+                android:layout_marginTop="@dimen/_1sdp"
+                android:background="@color/colorDividersCard" />
+
+            <TextView
+                android:id="@+id/tvLocationFeatured"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/vLine2Featured"
+                android:drawableLeft="@drawable/ic_location_pin_search"
+                android:drawablePadding="@dimen/_2sdp"
+                android:drawableTint="@color/colorPrimary"
+                android:textAlignment="viewStart"
+                android:fontFamily="@font/roboto_regular"
+                android:gravity="start|center_vertical"
+                android:maxLines="2"
+                android:paddingLeft="@dimen/featured_title_padding"
+
+                android:paddingRight="@dimen/featured_title_padding"
+
+                android:text="@string/tv_location"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/_8sdp"
+                android:paddingStart="@dimen/featured_title_padding"
+                android:paddingEnd="@dimen/featured_title_padding"
+                android:drawableStart="@drawable/ic_location_pin_search" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

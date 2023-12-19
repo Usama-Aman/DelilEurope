@@ -1,0 +1,1194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/relMain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/iToolbar"
+            layout="@layout/profile_tollbar" />
+
+
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_6sdp"
+            android:layout_marginLeft="@dimen/_6sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_marginEnd="@dimen/_6sdp"
+            android:layout_marginRight="@dimen/_6sdp">
+
+
+            <LinearLayout
+                android:id="@+id/llView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="@dimen/_92sdp"
+                    android:layout_height="@dimen/_92sdp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="@dimen/_8sdp">
+
+                    <ImageView
+                        android:id="@+id/imgProfileIcon"
+                        android:layout_width="@dimen/_90sdp"
+                        android:layout_height="@dimen/_90sdp"
+                        android:src="@drawable/user_placeholder" />
+
+                    <ImageView
+                        android:layout_width="@dimen/_22sdp"
+                        android:layout_height="@dimen/_19sdp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginEnd="@dimen/_1sdp"
+                        android:layout_marginRight="@dimen/_1sdp"
+                        android:background="@drawable/ic_camera_with_bg" />
+                </RelativeLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/inputLayoutBusinessName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:clipChildren="false">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etBusinessName"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/input_edittext_height"
+                        android:backgroundTint="@color/colorLightGrey"
+                        android:fontFamily="@font/roboto_regular"
+                        android:hint="@string/tv_business_name"
+                        android:inputType="textPersonName"
+                        android:paddingStart="@dimen/_10sdp"
+                        android:paddingLeft="@dimen/_10sdp"
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/colorBlack"
+                        android:textCursorDrawable="@null"
+                        android:textSize="@dimen/_11sdp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/inputLayoutCategory"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginEnd="@dimen/_5sdp"
+                    android:layout_marginRight="@dimen/_5sdp"
+                    android:clipChildren="false"
+                    android:hint="@string/hint_category">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etCategory"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/input_edittext_height"
+                        android:backgroundTint="@color/colorLightGrey"
+                        android:drawableEnd="@drawable/ic_arrow_down_layer"
+                        android:drawableRight="@drawable/ic_arrow_down_layer"
+                        android:focusable="false"
+                        android:fontFamily="@font/roboto_regular"
+                        android:inputType="text"
+                        android:paddingStart="@dimen/_10sdp"
+                        android:paddingLeft="@dimen/_10sdp"
+                        android:text="@string/tv_category"
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/colorBlack"
+                        android:textCursorDrawable="@null"
+                        android:textSize="@dimen/_11sdp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/inputLayoutSubCategory"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginEnd="@dimen/_5sdp"
+                    android:layout_marginRight="@dimen/_5sdp"
+                    android:clipChildren="false"
+                    android:hint="@string/hint_sub_category">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etSubCategory"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/input_edittext_height"
+                        android:backgroundTint="@color/colorLightGrey"
+                        android:drawableEnd="@drawable/ic_arrow_down_layer"
+                        android:drawableRight="@drawable/ic_arrow_down_layer"
+                        android:focusable="false"
+                        android:fontFamily="@font/roboto_regular"
+                        android:inputType="text"
+                        android:textAlignment="viewStart"
+                        android:paddingStart="@dimen/_10sdp"
+                        android:paddingLeft="@dimen/_10sdp"
+                        android:text="@string/tv_sub_category"
+                        android:textColor="@color/colorBlack"
+                        android:textCursorDrawable="@null"
+                        android:textSize="@dimen/_11sdp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/inputLayoutEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginEnd="@dimen/_5sdp"
+                    android:layout_marginRight="@dimen/_5sdp"
+                    android:clipChildren="false">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etEmail"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/input_edittext_height"
+                        android:backgroundTint="@color/colorLightGrey"
+                        android:fontFamily="@font/roboto_regular"
+                        android:hint="@string/hint_business_email"
+                        android:inputType="textEmailAddress"
+                        android:paddingStart="@dimen/_10sdp"
+                        android:paddingLeft="@dimen/_10sdp"
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/colorBlack"
+                        android:textCursorDrawable="@null"
+                        android:textSize="@dimen/_11sdp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/inputLayoutPhone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginEnd="@dimen/_5sdp"
+                    android:layout_marginRight="@dimen/_5sdp"
+                    android:clipChildren="false">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etPhone"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/input_edittext_height"
+                        android:backgroundTint="@color/colorLightGrey"
+                        android:digits="0123456789+"
+                        android:fontFamily="@font/roboto_regular"
+                        android:hint="@string/phone_txt"
+                        android:inputType="phone"
+                        android:maxLength="11"
+                        android:paddingStart="@dimen/_10sdp"
+                        android:paddingLeft="@dimen/_10sdp"
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/colorBlack"
+                        android:textColorHint="@color/colorLightGrey"
+                        android:textCursorDrawable="@null"
+                        android:textSize="@dimen/_11sdp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/inputLayoutNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginEnd="@dimen/_5sdp"
+                    android:layout_marginRight="@dimen/_5sdp"
+                    android:clipChildren="false"
+                    android:hint="@string/tv_organization_number">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etNumber"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/input_edittext_height"
+                        android:backgroundTint="@color/colorLightGrey"
+                        android:fontFamily="@font/roboto_regular"
+                        android:hint="@string/tv_organization_number"
+                        android:inputType="text"
+                        android:paddingStart="@dimen/_10sdp"
+                        android:paddingLeft="@dimen/_10sdp"
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/colorBlack"
+                        android:textColorHint="@color/colorLightGrey"
+                        android:textCursorDrawable="@null"
+                        android:textSize="@dimen/_11sdp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/inputLayoutAdress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginEnd="@dimen/_5sdp"
+                    android:layout_marginRight="@dimen/_5sdp"
+                    android:clipChildren="false">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etAddress"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/input_edittext_height"
+                        android:backgroundTint="@color/colorLightGrey"
+                        android:drawableEnd="@drawable/ic_location_pin"
+                        android:drawableRight="@drawable/ic_location_pin"
+                        android:drawableTint="@color/colorPrimaryDark"
+                        android:focusable="false"
+                        android:fontFamily="@font/roboto_regular"
+                        android:hint="@string/tv_address"
+                        android:inputType="text"
+                        android:paddingStart="@dimen/_10sdp"
+                        android:paddingLeft="@dimen/_10sdp"
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/colorBlack"
+                        android:textCursorDrawable="@null"
+                        android:textSize="@dimen/_11sdp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/inputLayoutCountry"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginEnd="@dimen/_5sdp"
+                    android:layout_marginRight="@dimen/_5sdp"
+                    android:clipChildren="false">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etCountry"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/input_edittext_height"
+                        android:backgroundTint="@color/colorLightGrey"
+                        android:drawableEnd="@drawable/ic_arrow_down_layer"
+                        android:drawableRight="@drawable/ic_arrow_down_layer"
+                        android:focusable="false"
+                        android:fontFamily="@font/roboto_regular"
+                        android:hint="@string/tv_country"
+                        android:inputType="text"
+                        android:paddingStart="@dimen/_10sdp"
+                        android:paddingLeft="@dimen/_10sdp"
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/colorBlack"
+                        android:textCursorDrawable="@null"
+                        android:textSize="@dimen/_11sdp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/inputLayoutState"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginEnd="@dimen/_5sdp"
+                    android:layout_marginRight="@dimen/_5sdp"
+                    android:clipChildren="false">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etState"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/input_edittext_height"
+                        android:backgroundTint="@color/colorLightGrey"
+                        android:drawableEnd="@drawable/ic_arrow_down_layer"
+                        android:drawableRight="@drawable/ic_arrow_down_layer"
+                        android:focusable="false"
+                        android:fontFamily="@font/roboto_regular"
+                        android:hint="@string/tv_state"
+                        android:inputType="text"
+                        android:paddingStart="@dimen/_10sdp"
+                        android:paddingLeft="@dimen/_10sdp"
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/colorBlack"
+                        android:textCursorDrawable="@null"
+                        android:textSize="@dimen/_11sdp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/inputLayoutCity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginEnd="@dimen/_5sdp"
+                    android:layout_marginRight="@dimen/_5sdp"
+                    android:clipChildren="false">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etCity"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/input_edittext_height"
+                        android:backgroundTint="@color/colorLightGrey"
+                        android:drawableEnd="@drawable/ic_arrow_down_layer"
+                        android:drawableRight="@drawable/ic_arrow_down_layer"
+                        android:focusable="false"
+                        android:fontFamily="@font/roboto_regular"
+                        android:hint="@string/tv_city"
+                        android:inputType="text"
+                        android:paddingStart="@dimen/_10sdp"
+                        android:paddingLeft="@dimen/_10sdp"
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/colorBlack"
+                        android:textCursorDrawable="@null"
+                        android:textSize="@dimen/_11sdp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/inputLayoutZipCode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginEnd="@dimen/_5sdp"
+                    android:layout_marginRight="@dimen/_5sdp"
+                    android:clipChildren="false">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etZipCode"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/input_edittext_height"
+                        android:backgroundTint="@color/colorLightGrey"
+                        android:fontFamily="@font/roboto_regular"
+                        android:hint="@string/tv_zipcode"
+                        android:inputType="number"
+                        android:maxLength="5"
+                        android:paddingStart="@dimen/_10sdp"
+                        android:paddingLeft="@dimen/_10sdp"
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/colorBlack"
+                        android:textCursorDrawable="@null"
+                        android:textSize="@dimen/_11sdp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/inputLayoutWebsite"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginEnd="@dimen/_5sdp"
+                    android:layout_marginRight="@dimen/_5sdp"
+                    android:clipChildren="false"
+                    android:hint="@string/hint_website">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etWebsite"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/input_edittext_height"
+                        android:backgroundTint="@color/colorLightGrey"
+                        android:fontFamily="@font/roboto_regular"
+                        android:hint="@string/tv_website"
+                        android:inputType="text"
+                        android:paddingStart="@dimen/_10sdp"
+                        android:paddingLeft="@dimen/_10sdp"
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/colorBlack"
+                        android:textColorHint="@color/colorLightGrey"
+                        android:textCursorDrawable="@null"
+                        android:textSize="@dimen/_11sdp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_8sdp"
+                    android:layout_marginLeft="@dimen/_8sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:fontFamily="@font/roboto_bold"
+                    android:text="@string/tv_business_hours_profile"
+                    android:textColor="@color/colorDefaultText"
+                    android:textSize="@dimen/_13sdp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_8sdp"
+                        android:layout_marginLeft="@dimen/_8sdp"
+                        android:fontFamily="@font/roboto_regular"
+                        android:text="@string/tv_monday"
+                        android:textColor="@color/colorGreyHintText"
+                        android:textSize="@dimen/_10sdp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:orientation="horizontal">
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:id="@+id/inputLayoutMonStart"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:layout_marginEnd="@dimen/_5sdp"
+                                android:layout_marginRight="@dimen/_5sdp"
+                                android:clipChildren="false">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/etMonStart"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/input_edittext_height"
+                                    android:backgroundTint="@color/colorLightGrey"
+                                    android:drawableEnd="@drawable/ic_arrow_down_time"
+                                    android:drawableRight="@drawable/ic_arrow_down_time"
+                                    android:focusable="false"
+                                    android:fontFamily="@font/roboto_regular"
+                                    android:hint="@string/tv_start_time"
+                                    android:inputType="text"
+                                    android:paddingStart="@dimen/_10sdp"
+                                    android:paddingLeft="@dimen/_10sdp"
+                                    android:textAlignment="viewStart"
+                                    android:textColor="@color/colorBlack"
+                                    android:textCursorDrawable="@null"
+                                    android:textSize="@dimen/_11sdp" />
+                            </com.google.android.material.textfield.TextInputLayout>
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:id="@+id/inputLayoutMonEnd"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:layout_marginEnd="@dimen/_5sdp"
+                                android:layout_marginRight="@dimen/_5sdp"
+                                android:clipChildren="false">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/etMonEnd"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/input_edittext_height"
+                                    android:backgroundTint="@color/colorLightGrey"
+                                    android:drawableEnd="@drawable/ic_arrow_down_time"
+                                    android:drawableRight="@drawable/ic_arrow_down_time"
+                                    android:focusable="false"
+                                    android:fontFamily="@font/roboto_regular"
+                                    android:hint="@string/tv_end_time"
+                                    android:inputType="text"
+                                    android:paddingStart="@dimen/_10sdp"
+                                    android:paddingLeft="@dimen/_10sdp"
+                                    android:textAlignment="viewStart"
+                                    android:textColor="@color/colorBlack"
+                                    android:textCursorDrawable="@null"
+                                    android:textSize="@dimen/_11sdp" />
+                            </com.google.android.material.textfield.TextInputLayout>
+                        </RelativeLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_8sdp"
+                        android:layout_marginLeft="@dimen/_8sdp"
+                        android:fontFamily="@font/roboto_regular"
+                        android:text="@string/tv_tuesday"
+                        android:textColor="@color/colorGreyHintText"
+                        android:textSize="@dimen/_10sdp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:orientation="horizontal">
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:id="@+id/inputLayoutTueStart"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:layout_marginEnd="@dimen/_5sdp"
+                                android:layout_marginRight="@dimen/_5sdp"
+                                android:clipChildren="false">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/etTueStart"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/input_edittext_height"
+                                    android:backgroundTint="@color/colorLightGrey"
+                                    android:drawableEnd="@drawable/ic_arrow_down_time"
+                                    android:drawableRight="@drawable/ic_arrow_down_time"
+                                    android:focusable="false"
+                                    android:fontFamily="@font/roboto_regular"
+                                    android:hint="@string/tv_start_time"
+                                    android:inputType="text"
+                                    android:paddingStart="@dimen/_10sdp"
+                                    android:paddingLeft="@dimen/_10sdp"
+                                    android:textAlignment="viewStart"
+                                    android:textColor="@color/colorBlack"
+                                    android:textCursorDrawable="@null"
+                                    android:textSize="@dimen/_11sdp" />
+                            </com.google.android.material.textfield.TextInputLayout>
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:id="@+id/inputLayoutTueEnd"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:layout_marginEnd="@dimen/_5sdp"
+                                android:layout_marginRight="@dimen/_5sdp"
+                                android:clipChildren="false">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/etTueEnd"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/input_edittext_height"
+                                    android:backgroundTint="@color/colorLightGrey"
+                                    android:drawableEnd="@drawable/ic_arrow_down_time"
+                                    android:drawableRight="@drawable/ic_arrow_down_time"
+                                    android:focusable="false"
+                                    android:fontFamily="@font/roboto_regular"
+                                    android:hint="@string/tv_end_time"
+                                    android:inputType="text"
+                                    android:paddingStart="@dimen/_10sdp"
+                                    android:paddingLeft="@dimen/_10sdp"
+                                    android:textAlignment="viewStart"
+                                    android:textColor="@color/colorBlack"
+                                    android:textCursorDrawable="@null"
+                                    android:textSize="@dimen/_11sdp" />
+                            </com.google.android.material.textfield.TextInputLayout>
+                        </RelativeLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_8sdp"
+                        android:layout_marginLeft="@dimen/_8sdp"
+                        android:fontFamily="@font/roboto_regular"
+                        android:text="@string/tv_wednesday"
+                        android:textColor="@color/colorGreyHintText"
+                        android:textSize="@dimen/_10sdp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:orientation="horizontal">
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:id="@+id/inputLayoutWedStart"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:layout_marginEnd="@dimen/_5sdp"
+                                android:layout_marginRight="@dimen/_5sdp"
+                                android:clipChildren="false">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/etWedStart"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/input_edittext_height"
+                                    android:backgroundTint="@color/colorLightGrey"
+                                    android:drawableEnd="@drawable/ic_arrow_down_time"
+                                    android:drawableRight="@drawable/ic_arrow_down_time"
+                                    android:focusable="false"
+                                    android:fontFamily="@font/roboto_regular"
+                                    android:hint="@string/tv_start_time"
+                                    android:inputType="text"
+                                    android:paddingStart="@dimen/_10sdp"
+                                    android:paddingLeft="@dimen/_10sdp"
+                                    android:textAlignment="viewStart"
+                                    android:textColor="@color/colorBlack"
+                                    android:textCursorDrawable="@null"
+                                    android:textSize="@dimen/_11sdp" />
+                            </com.google.android.material.textfield.TextInputLayout>
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:id="@+id/inputLayoutWedEnd"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:layout_marginEnd="@dimen/_5sdp"
+                                android:layout_marginRight="@dimen/_5sdp"
+                                android:clipChildren="false">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/etWedEnd"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/input_edittext_height"
+                                    android:backgroundTint="@color/colorLightGrey"
+                                    android:drawableEnd="@drawable/ic_arrow_down_time"
+                                    android:drawableRight="@drawable/ic_arrow_down_time"
+                                    android:focusable="false"
+                                    android:fontFamily="@font/roboto_regular"
+                                    android:hint="@string/tv_end_time"
+                                    android:inputType="text"
+                                    android:paddingStart="@dimen/_10sdp"
+                                    android:paddingLeft="@dimen/_10sdp"
+                                    android:textAlignment="viewStart"
+                                    android:textColor="@color/colorBlack"
+                                    android:textCursorDrawable="@null"
+                                    android:textSize="@dimen/_11sdp" />
+                            </com.google.android.material.textfield.TextInputLayout>
+                        </RelativeLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_8sdp"
+                        android:layout_marginLeft="@dimen/_8sdp"
+                        android:fontFamily="@font/roboto_regular"
+                        android:text="@string/tv_thursday"
+                        android:textColor="@color/colorGreyHintText"
+                        android:textSize="@dimen/_10sdp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:orientation="horizontal">
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:id="@+id/inputLayoutThuStart"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:layout_marginEnd="@dimen/_5sdp"
+                                android:layout_marginRight="@dimen/_5sdp"
+                                android:clipChildren="false">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/etThunStart"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/input_edittext_height"
+                                    android:backgroundTint="@color/colorLightGrey"
+                                    android:drawableEnd="@drawable/ic_arrow_down_time"
+                                    android:drawableRight="@drawable/ic_arrow_down_time"
+                                    android:focusable="false"
+                                    android:fontFamily="@font/roboto_regular"
+                                    android:hint="@string/tv_start_time"
+                                    android:inputType="text"
+                                    android:paddingStart="@dimen/_10sdp"
+                                    android:paddingLeft="@dimen/_10sdp"
+                                    android:textAlignment="viewStart"
+                                    android:textColor="@color/colorBlack"
+                                    android:textCursorDrawable="@null"
+                                    android:textSize="@dimen/_11sdp" />
+                            </com.google.android.material.textfield.TextInputLayout>
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:id="@+id/inputLayoutThuEnd"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:layout_marginEnd="@dimen/_5sdp"
+                                android:layout_marginRight="@dimen/_5sdp"
+                                android:clipChildren="false">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/etThuEnd"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/input_edittext_height"
+                                    android:backgroundTint="@color/colorLightGrey"
+                                    android:drawableEnd="@drawable/ic_arrow_down_time"
+                                    android:drawableRight="@drawable/ic_arrow_down_time"
+                                    android:focusable="false"
+                                    android:fontFamily="@font/roboto_regular"
+                                    android:hint="@string/tv_end_time"
+                                    android:inputType="text"
+                                    android:paddingStart="@dimen/_10sdp"
+                                    android:paddingLeft="@dimen/_10sdp"
+                                    android:textAlignment="viewStart"
+                                    android:textColor="@color/colorBlack"
+                                    android:textCursorDrawable="@null"
+                                    android:textSize="@dimen/_11sdp" />
+                            </com.google.android.material.textfield.TextInputLayout>
+                        </RelativeLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_8sdp"
+                        android:layout_marginLeft="@dimen/_8sdp"
+                        android:fontFamily="@font/roboto_regular"
+                        android:text="@string/tv_friday"
+                        android:textColor="@color/colorGreyHintText"
+                        android:textSize="@dimen/_10sdp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:orientation="horizontal">
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:id="@+id/inputLayoutFriStart"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:layout_marginEnd="@dimen/_5sdp"
+                                android:layout_marginRight="@dimen/_5sdp"
+                                android:clipChildren="false">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/etFriStart"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/input_edittext_height"
+                                    android:backgroundTint="@color/colorLightGrey"
+                                    android:drawableEnd="@drawable/ic_arrow_down_time"
+                                    android:drawableRight="@drawable/ic_arrow_down_time"
+                                    android:focusable="false"
+                                    android:fontFamily="@font/roboto_regular"
+                                    android:hint="@string/tv_start_time"
+                                    android:inputType="text"
+                                    android:paddingStart="@dimen/_10sdp"
+                                    android:paddingLeft="@dimen/_10sdp"
+                                    android:textAlignment="viewStart"
+                                    android:textColor="@color/colorBlack"
+                                    android:textCursorDrawable="@null"
+                                    android:textSize="@dimen/_11sdp" />
+                            </com.google.android.material.textfield.TextInputLayout>
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:id="@+id/inputLayoutFriEnd"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:layout_marginEnd="@dimen/_5sdp"
+                                android:layout_marginRight="@dimen/_5sdp"
+                                android:clipChildren="false">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/etFriEnd"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/input_edittext_height"
+                                    android:backgroundTint="@color/colorLightGrey"
+                                    android:drawableEnd="@drawable/ic_arrow_down_time"
+                                    android:drawableRight="@drawable/ic_arrow_down_time"
+                                    android:focusable="false"
+                                    android:fontFamily="@font/roboto_regular"
+                                    android:hint="@string/tv_end_time"
+                                    android:inputType="text"
+                                    android:paddingStart="@dimen/_10sdp"
+                                    android:paddingLeft="@dimen/_10sdp"
+                                    android:textAlignment="viewStart"
+                                    android:textColor="@color/colorBlack"
+                                    android:textCursorDrawable="@null"
+                                    android:textSize="@dimen/_11sdp" />
+                            </com.google.android.material.textfield.TextInputLayout>
+                        </RelativeLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_8sdp"
+                        android:layout_marginLeft="@dimen/_8sdp"
+                        android:fontFamily="@font/roboto_regular"
+                        android:text="@string/tv_saturday"
+                        android:textColor="@color/colorGreyHintText"
+                        android:textSize="@dimen/_10sdp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:orientation="horizontal">
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:id="@+id/inputLayoutSatStart"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:layout_marginEnd="@dimen/_5sdp"
+                                android:layout_marginRight="@dimen/_5sdp"
+                                android:clipChildren="false">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/etSatStart"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/input_edittext_height"
+                                    android:backgroundTint="@color/colorLightGrey"
+                                    android:drawableEnd="@drawable/ic_arrow_down_time"
+                                    android:drawableRight="@drawable/ic_arrow_down_time"
+                                    android:focusable="false"
+                                    android:fontFamily="@font/roboto_regular"
+                                    android:hint="@string/tv_start_time"
+                                    android:inputType="text"
+                                    android:paddingStart="@dimen/_10sdp"
+                                    android:paddingLeft="@dimen/_10sdp"
+                                    android:textAlignment="viewStart"
+                                    android:textColor="@color/colorBlack"
+                                    android:textCursorDrawable="@null"
+                                    android:textSize="@dimen/_11sdp" />
+                            </com.google.android.material.textfield.TextInputLayout>
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:id="@+id/inputLayoutSatEnd"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:layout_marginEnd="@dimen/_5sdp"
+                                android:layout_marginRight="@dimen/_5sdp"
+                                android:clipChildren="false">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/etSatEnd"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/input_edittext_height"
+                                    android:backgroundTint="@color/colorLightGrey"
+                                    android:drawableEnd="@drawable/ic_arrow_down_time"
+                                    android:drawableRight="@drawable/ic_arrow_down_time"
+                                    android:focusable="false"
+                                    android:fontFamily="@font/roboto_regular"
+                                    android:hint="@string/tv_end_time"
+                                    android:inputType="text"
+                                    android:paddingStart="@dimen/_10sdp"
+                                    android:paddingLeft="@dimen/_10sdp"
+                                    android:textAlignment="viewStart"
+                                    android:textColor="@color/colorBlack"
+                                    android:textCursorDrawable="@null"
+                                    android:textSize="@dimen/_11sdp" />
+                            </com.google.android.material.textfield.TextInputLayout>
+                        </RelativeLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_8sdp"
+                        android:layout_marginLeft="@dimen/_8sdp"
+                        android:fontFamily="@font/roboto_regular"
+                        android:text="@string/tv_sunday"
+                        android:textColor="@color/colorGreyHintText"
+                        android:textSize="@dimen/_10sdp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:orientation="horizontal">
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:id="@+id/inputLayoutSunStart"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:layout_marginEnd="@dimen/_5sdp"
+                                android:layout_marginRight="@dimen/_5sdp"
+                                android:clipChildren="false">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/etSunStart"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/input_edittext_height"
+                                    android:backgroundTint="@color/colorLightGrey"
+                                    android:drawableEnd="@drawable/ic_arrow_down_time"
+                                    android:drawableRight="@drawable/ic_arrow_down_time"
+                                    android:focusable="false"
+                                    android:fontFamily="@font/roboto_regular"
+                                    android:hint="@string/tv_start_time"
+                                    android:inputType="text"
+                                    android:paddingStart="@dimen/_10sdp"
+                                    android:paddingLeft="@dimen/_10sdp"
+                                    android:textAlignment="viewStart"
+                                    android:textColor="@color/colorBlack"
+                                    android:textCursorDrawable="@null"
+                                    android:textSize="@dimen/_11sdp" />
+                            </com.google.android.material.textfield.TextInputLayout>
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:id="@+id/inputLayoutSunEnd"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:layout_marginEnd="@dimen/_5sdp"
+                                android:layout_marginRight="@dimen/_5sdp"
+                                android:clipChildren="false">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/etSunEnd"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/input_edittext_height"
+                                    android:backgroundTint="@color/colorLightGrey"
+                                    android:drawableEnd="@drawable/ic_arrow_down_time"
+                                    android:drawableRight="@drawable/ic_arrow_down_time"
+                                    android:focusable="false"
+                                    android:fontFamily="@font/roboto_regular"
+                                    android:hint="@string/tv_end_time"
+                                    android:inputType="text"
+                                    android:paddingStart="@dimen/_10sdp"
+                                    android:paddingLeft="@dimen/_10sdp"
+                                    android:textAlignment="viewStart"
+                                    android:textColor="@color/colorBlack"
+                                    android:textCursorDrawable="@null"
+                                    android:textSize="@dimen/_11sdp" />
+                            </com.google.android.material.textfield.TextInputLayout>
+                        </RelativeLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/inputLayoutAboutMe"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_100sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginEnd="@dimen/_5sdp"
+                    android:layout_marginRight="@dimen/_5sdp"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:backgroundTint="@color/colorLightGrey"
+                    android:clipChildren="false"
+                    android:textAlignment="viewStart">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etAboutMe"
+                        android:layout_width="match_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_gravity="top"
+                        android:fontFamily="@font/roboto_regular"
+                        android:gravity="top"
+                        android:hint="@string/tv_about_business"
+                        android:inputType="textMultiLine"
+                        android:minLines="1"
+                        android:singleLine="false"
+                        android:textAlignment="viewStart"
+                        android:textCursorDrawable="@null"
+                        android:textSize="@dimen/_11sdp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <LinearLayout
+                    android:id="@+id/llImages"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_8sdp"
+                    android:layout_marginLeft="@dimen/_8sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginEnd="@dimen/_8sdp"
+                    android:layout_marginRight="@dimen/_8sdp"
+                    android:orientation="vertical">
+
+                    <TextView
+
+                        android:id="@+id/tvImages"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_regular"
+                        android:gravity="start|center_vertical"
+                        android:padding="@dimen/_2sdp"
+                        android:text="@string/tv_ad_images"
+                        android:textAlignment="viewStart"
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorGreyHintText"
+                        android:textSize="@dimen/_10sdp" />
+
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rvImagesList"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clipToPadding="false"
+                        android:orientation="horizontal"
+                        android:visibility="visible"
+                        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linsubScriptionPlan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvSubscriptionPlans"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:fontFamily="@font/roboto_regular"
+                        android:gravity="start|center_vertical"
+                        android:padding="@dimen/_2sdp"
+                        android:text="@string/tv_subscriptions_plan"
+                        android:textAlignment="viewStart"
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorGreyHintText"
+                        android:textSize="@dimen/_10sdp" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rvSubscriptionsList"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:clipToPadding="false"
+                        android:orientation="horizontal"
+                        android:visibility="visible"
+                        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager" />
+
+
+                    <androidx.appcompat.widget.AppCompatCheckBox
+                        android:id="@+id/acceptCheckBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:backgroundTint="@color/colorPrimary"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:fontFamily="@font/roboto_semibold"
+                        android:text="@string/tv_i_want_to_post"
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/_12sdp"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+
+                <Button
+                    android:id="@+id/btnSave"
+                    style="@style/BlueBgButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:fontFamily="@font/roboto_regular"
+                    android:text="@string/pay_save"
+                    android:textSize="@dimen/_12sdp" />
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+
+    <include
+        layout="@layout/progress_bar_generic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" />
+</RelativeLayout>

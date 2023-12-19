@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">DalilEurope</string>
+
+    <string name="link_terms_and_conditions">https://elxdrive.com/dalieurope/pages/terms-of-service-and-use</string>
+    <string name="default_notification_channel_id">1</string>
+
+    <string name="action_settings">Settings sv</string>
+    <string name="tv_log_in">LOG IN sv</string>
+    <string name="tv_register">Register sv</string>
+    <string name="tv_email">Email Address sv</string>
+    <string name="tv_otp_code">OTP Code sv</string>
+    <string name="tv_password">Password sv</string>
+    <string name="tv_forgot_pass">Forgot Password? sv</string>
+    <string name="tv_need_account">Need a Dalieurope account? sv</string>
+    <string name="tv_create_account">Create an account sv</string>
+
+
+    <string name="tv_confirm_pass">Confirm Password sv</string>
+    <string name="tv_already_account">Already have an account? sv</string>
+    <string name="tv_sign_in">Sign In sv</string>
+    <string name="tv_sign_up">Sign Up sv</string>
+    <string name="tv_i_agree">I agree to the sv</string>
+    <string name="tv_terms_and_conditions">Terms and Conditions sv</string>
+    <string name="tv_err_msg_password_empty">Password is required sv</string>
+    <string name="tv_err_msg_password_confirm_empty">Confirm Password is required sv</string>
+    <string name="tv_err_msg_otp_empty_code">OTP code is required sv</string>
+    <string name="tv_err_msg_otp_code">Minimum 4 characters sv</string>
+    <string name="tv_err_msg_password">Minimum 6 characters sv</string>
+    <string name="tv_err_msg_confirm_password">Confirm password did not match sv</string>
+    <string name="tv_err_msg_email_empty">Email Address is required sv</string>
+    <string name="tv_err_msg_email">Valid email required sv</string>
+    <string name="tv_err_msg_name">Name should not be empty sv</string>
+    <string name="tv_back_to_login">Back to login sv</string>
+    <string name="tv_forgot_password">Forgot Password sv</string>
+    <string name="tv_reset_password">Reset Password sv</string>
+    <string name="tv_change_password">Change Password sv</string>
+    <string name="tv_send">Send sv</string>
+    <string name="tv_reset">Reset sv</string>
+    <string name="tv_location">Location.. sv</string>
+    <string name="menu_home">Home sv</string>
+    <string name="menu_profile">My Profile sv</string>
+    <string name="menu_business_profile">Business Profile sv</string>
+    <string name="menu_my_ads">My Ads sv</string>
+    <string name="menu_messages">Messages sv</string>
+    <string name="menu_my_favourites">My Favourites sv</string>
+    <string name="menu_privacy_settings">Privacy Policy sv</string>
+    <string name="menu_change_password">Change Password sv</string>
+    <string name="menu_about_us">About Us sv</string>
+    <string name="menu_advertise_us">Advertise With Us sv</string>
+    <string name="menu_questions_answers">Questions &amp; Answers sv</string>
+    <string name="menu_contact_us">Contact Us sv</string>
+    <string name="menu_logout">Logout sv</string>
+    <string name="openDrawer">Open Drawer sv</string>
+    <string name="closeDrawer">Close Drawer sv</string>
+    <string name="tv_dashboard_head">Buy, Sell or Find \nWhat You need sv</string>
+    <string name="tv_send_review">Submit Review sv</string>
+
+    <string name="alert_success">Success sv</string>
+    <string name="alert_ok">Ok sv</string>
+    <string name="alert_error">Error sv</string>
+    <string name="alert_request_timeout">Request time out, Please try again sv</string>
+    <string name="alert_internet_connection">Your internet connection seems to be weak. Please check your connection sv</string>
+    <string name="alert_information">Error sv</string>
+    <string name="alert_api_not_found">Request time out! sv</string>
+    <string name="alert_bad_request">Bad Request, Please check sv</string>
+    <string name="alert_internal_server_error">Internal Server Error sv</string>
+    <string name="alert_msg_unknown">Unknown error found! sv</string>
+    <string name="error_msg_unauthorized_user">Unauthorized user or password. sv</string>
+    <string name="tv_search">Search sv</string>
+    <string name="tv_more">More sv</string>
+    <string name="tv_featured">Featured sv</string>
+    <string name="alert_terms_conditions">Please check Terms and Conditions sv</string>
+    <string name="tv_categories">Categories sv</string>
+    <string name="tv_submit">Submit sv</string>
+    <string name="no_data_found_text">No data found yet. sv</string>
+    <string name="alert_logout_txt">Are you sure you want to sign out? sv</string>
+    <string name="alert_logout">Sign Out sv</string>
+    <string name="alert_logout_cancel">Cancel sv</string>
+    <string name="tv_filter">Filtering sv</string>
+    <string name="tv_comments">Comments sv</string>
+    <string name="tv_views">Views sv</string>
+    <string name="tv_likes">Likes sv</string>
+    <string name="tv_order">Order sv</string>
+    <string name="tv_sort">Sort By sv</string>
+    <string name="tv_a_z">A-Z sv</string>
+    <string name="tv_z_a">Z-A sv</string>
+    <string name="tv_distance">Distance sv</string>
+    <string name="tv_rating">Rating sv</string>
+    <string name="tv_permission_needed">Permission needed sv</string>
+    <string name="tv_permission_detail">This app really need to use this permission, Do you want to authorize it? sv</string>
+    <string name="tv_ok">OK sv</string>
+    <string name="tv_not">NOT NOW sv</string>
+
+
+    <string name="tv_categories_colon">Categories: sv</string>
+    <string name="tv_languages">Languages we speak sv</string>
+    <string name="tv_info">General Info sv</string>
+    <string name="tv_services">Services sv</string>
+    <string name="tv_price">Price sv</string>
+    <string name="tv_business_hours">Business Hours sv</string>
+    <string name="tv_payment_method">Payment Method sv</string>
+    <string name="tv_other_information">Other Information sv</string>
+    <string name="tv_write_review">Write a review sv</string>
+    <string name="tv_overall_rating">Your overall rating sv</string>
+    <string name="tv_add_photo">Add a photo(Optional) sv</string>
+    <string name="tv_type_message">Title of your review sv</string>
+    <string name="error_msg_review_note_required">Review note is required sv</string>
+    <string name="error_msg_review_rating_required">Rating is required sv</string>
+    <string name="msg_google_apps_not_found">Google Maps application not found sv</string>
+    <string name="tv_rating_and_reviews">Rating &amp; Review sv</string>
+    <string name="alert_no_information_provided">No Information Provided sv</string>
+    <string name="tv_ads_detail">Details sv</string>
+    <string name="tv_photos">Photos sv</string>
+    <string name="tv_gallery">Gallery sv</string>
+    <string name="tv_inquiry">Inquiry sv</string>
+    <string name="tv_posted_by">Posted By sv</string>
+
+    <string name="tv_member_since">Member since  sv</string>
+    <string name="error_message_required">Message field is required  sv</string>
+    <string name="tv_ad_title">Ad Title sv</string>
+    <string name="tv_dPrice">Discount Price sv</string>
+    <string name="tv_done">Done sv</string>
+
+    <string name="tv_website">Website sv</string>
+    <string name="tv_sub_categories">Sub Categories sv</string>
+    <string name="tv_time">Time sv</string>
+    <string name="tv_end_date">End date sv</string>
+    <string name="tv_start_date">Start date sv</string>
+    <string name="tv_description">Description sv</string>
+    <string name="tv_payment_methods">Payment Methods sv</string>
+    <string name="tv_credit_card">Credit Card sv</string>
+    <string name="tv_paypal">Paypal sv</string>
+    <string name="tv_master_card">Master Card sv</string>
+    <string name="tv_make_ad_type">Make Ad Highlighted/Featured sv</string>
+    <string name="tv_none">None sv</string>
+    <string name="tv_highlighted">Highlighted sv</string>
+    <string name="tv_featured_price">Featured sv</string>
+    <string name="tv_ad_images">Ad Images(maximum of 5 images)  sv</string>
+    <string name="tv_save">Save sv</string>
+    <string name="tv_select_category">Select Category sv</string>
+    <string name="error_title_required">Title is required sv</string>
+    <string name="error_category_required">Please select category sv</string>
+    <string name="error_category_sub_required">Please select sub category sv</string>
+    <string name="error_tagline_required">Tagline is required sv</string>
+    <string name="error_location_required">Location is required sv</string>
+    <string name="error_select_location_required">Please select valid location sv</string>
+    <string name="error_website_required">Website is required sv</string>
+    <string name="error_price_required">Price is required sv</string>
+    <string name="error_desc_required">Description is required sv</string>
+    <string name="error_dPrice_required">Discount price is required sv</string>
+    <string name="error_start_date_required">Start date is required sv</string>
+    <string name="error_service_required">Service field is required sv</string>
+    <string name="error_languages_required">Languages field is required sv</string>
+    <string name="msg_enable_gps">Please enable GPS! sv</string>
+    <string name="msg_some_went_wrong">Something went wrong. Please try again sv</string>
+    <string name="error_msg_address_not_found">No address found. Please make sure you are not connected to internet sv</string>
+    <string name="error_please_add_valid_business_featured_required">Business Feature Name is required sv</string>
+    <string name="error_msg_pick_location">Please pick a valid location sv</string>
+    <string name="alert_finish_uploading">Please wait until finish uploading.... sv</string>
+    <string name="tv_choose_gallery">Choose from gallery sv</string>
+    <string name="tv_open_camera">Open camera sv</string>
+
+    <string name="tv_feature_name">Name sv</string>
+    <string name="tv_feature_yes_no">Yes/No sv</string>
+
+    <string name="error_feature_required">Business features are required sv</string>
+    <string name="tv_update_ad">Update Ad sv</string>
+    <string name="tv_post_ad">Post your ad sv</string>
+    <string name="tv_pick_location">Pick Location sv</string>
+
+
+    <string name="error_msg_url_no_valid">URL is not valid sv</string>
+    <string name="error_website_valid_required">Please enter valid website sv</string>
+
+    <!--    // business profile-->
+    <string name="tv_business_name">Business Name  sv</string>
+    <string name="hint_category">Categories  sv</string>
+    <string name="tv_category">Select category sv</string>
+
+    <string name="hint_sub_category">Sub Categories sv</string>
+    <string name="tv_sub_category">Select sub category sv</string>
+    <string name="hint_business_email">Business Email Address sv</string>
+    <string name="tv_business_email">email@address.com sv</string>
+
+    <string name="hint_website">Website sv</string>
+    <string name="tv_business_website">www.website.com sv</string>
+
+    <string name="tv_business_hours_profile">Business Hours sv</string>
+
+    <string name="tv_monday">Monday sv</string>
+    <string name="tv_tuesday">Tuesday sv</string>
+    <string name="tv_wednesday">Wednesday sv</string>
+    <string name="tv_thursday">Thursday sv</string>
+    <string name="tv_friday">Friday sv</string>
+    <string name="tv_saturday">Saturday sv</string>
+    <string name="tv_sunday">Sunday sv</string>
+
+    <string name="tv_start_time">Start time sv</string>
+    <string name="tv_end_time">End time sv</string>
+
+    <string name="tv_i_want_to_post">I WANT TO POST ADS(10\u0024/MONTH ALL FEATURES INCLUDED) sv</string>
+    <string name="tv_about_business">About Business sv</string>
+
+    <string name="tv_time_error">Ending time must greater than starting time sv</string>
+
+    <string name="tv_business_features">Business Features sv</string>
+    <string name="msg_no_business_account">Please create a business account for Ad posting or Subscription against your business has been expired sv</string>
+    <string name="msg_business_no_paid">No subscription found against your business info sv</string>
+    <string name="msg_business_subscription_expired">You do not have a subscription or subscription against your business has been expired. Please update your business account. sv</string>
+
+
+    <string name="tv_subscriptions_plan">Select one of subscriptions plan sv </string>
+
+    <string name="tv_err_msg_business_name">Business Name should not be empty sv</string>
+    <string name="tv_err_msg_category">Category Name should not be empty sv</string>
+    <string name="tv_err_msg_sub_category">Sub Category Name should not be empty sv</string>
+    <string name="tv_err_msg_business_email">Business Email should not be empty sv</string>
+    <string name="tv_err_msg_website">Website Name should not be empty sv</string>
+
+    <string name="tv_err_msg_subscription">Please Select one of subscriptions sv</string>
+
+    <string name="tv_not_active">CLOSED sv</string>
+    <string name="tv_active">OPEN NOW sv</string>
+    <string name="tv_business_detail">Details are reburied sv</string>
+    <string name="tv_in_active">IN-ACTIVE sv</string>
+    <string name="tv_location_not_found">No address provided sv</string>
+
+    <string name="pay_save">Pay and Save sv</string>
+    <string name="msg_error_payment_false">An invalid Payment or PayPalConfiguration was submitted. sv</string>
+    <string name="msg_error_payment_canceled">Payment has been canceled. sv</string>
+    <string name="msg_error_payment_failure">An extremely unlikely failure occurred in Paypal Payment. Please try again. sv</string>
+
+    <string name="msg_error_discount_price">Discount price should be less than price sv</string>
+    <string name="msg_error_price">Price  should be greater than discount price  sv</string>
+    <string name="msg_error_end_date">Please select a valid end date sv</string>
+    <string name="msg_error_ad_expire">Cannot be edit as Ad has been expired sv</string>
+
+
+    <string name="tv_tagline">Tagline sweidsh</string>
+    <string name="message_frag_title">Meddelanden</string>
+    <string name="search_message">SÃ¶k</string>
+    <string name="loading">LÃ¤ser in</string>
+    <string name="loading_please_wait">LÃ¤ser in. VÃ¤nta</string>
+    <string name="success">FramgÃ¥ng</string>
+    <string name="error">Fel</string>
+    <string name="sure_to_del">Ã„r du sÃ¤ker pÃ¥ att radera</string>
+    <string name="ok">Ok</string>
+    <string name="cancel">Annullera</string>
+    <string name="send_message">Skicka meddelande</string>
+    <string name="tv_search_results">SÃ¶kresultat \n Vad vi har hittat</string>
+    <string name="new_message">Nytt meddelande</string>
+    <string name="title_messages">Meddelanden</string>
+
+
+    <string name="addlisting_title">Mina annonser</string>
+    <string name="menu_active">Aktiva</string>
+    <string name="menu_view">Se</string>
+    <string name="menu_del">Radera</string>
+    <string name="menu_edit">Redigera</string>
+    <string name="contact_us_title">Kontakta oss</string>
+    <string name="phone_txt">+001 123 1234</string>
+    <string name="description_text">Beskrivning</string>
+    <string name="save">Spara</string>
+    <string name="about_us">Om oss</string>
+    <string name="advertise_with_us">Annonsera med oss</string>
+    <string name="questions__and_answers">FrÃ¥gor och svar</string>
+    <string name="privacy_police">Integritetspolicy</string>
+    <string name="terms_of_service_and_use">Servicevillkor och anvÃ¤ndning</string>
+    <string name="contact_us">Kontakta oss</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+
+
+    <string name="tv_address">Adress</string>
+    <string name="tv_country">Land</string>
+    <string name="tv_state">stat</string>
+    <string name="tv_city">Stad</string>
+    <string name="tv_zipcode">Postnummer</string>
+    <string name="tv_aboutme">Om mig</string>
+    <string name="select_country">VÃ¤lj land</string>
+    <string name="select_state">VÃ¤lj stat</string>
+    <string name="select_city">VÃ¤lj stad</string>
+    <string name="done">Gjort</string>
+    <string name="permission_denied">TillstÃ¥nd nekas</string>
+
+    <string name="tv_err_msg_last_name">Efternamnet bÃ¶r inte vara tomt</string>
+    <string name="tv_err_msg_phone">Telefonen ska inte vara tom</string>
+    <string name="tv_err_msg_zipcode">Postnummer ska inte vara tom</string>
+    <string name="tv_err_msg_country">Landet bÃ¶r inte vara tomt</string>
+    <string name="tv_err_msg_state">Staten bÃ¶r inte vara tom</string>
+    <string name="tv_err_msg_city">Staden ska inte vara tom</string>
+    <string name="tv_err_msg_address">Adressen ska inte vara tom</string>
+
+    <string name="tv_first_name">FÃ¶rnamn</string>
+    <string name="tv_last_name">Efternamn</string>
+
+
+    <string name="german">tysk</string>
+    <string name="swedish">svenska</string>
+    <string name="english">engelsk</string>
+    <string name="arabic">arabiska</string>
+    <string name="select_the_language_you_want_to_use_in_the_app">VÃ¤lj det sprÃ¥k du vill anvÃ¤nda i appen.</string>
+    <string name="tv_err_business_detail">Business Details are required</string>
+    <string name="tv_current_password">Current Password</string>
+    <string name="num_e1_n1">%s</string>
+
+
+    <string name="lbl_take_camera_picture">Take a picture sv</string>
+    <string name="lbl_choose_from_gallery">Choose from gallery sv</string>
+    <string name="toast_image_intent_null">Image picker option is missing! sv</string>
+    <string name="lbl_set_profile_photo">Set profile image sv</string>
+    <string name="tv_confirm_new_password">Confirm New Password sv</string>
+    <string name="tv_current_password_required">Current Password is required sv</string>
+    <string name="tv_new_password">New Password sv</string>
+    <string name="tv_title_message">Title of your review sv</string>
+    <string name="tv_review_message">Your review sv</string>
+    <string name="tv_additional_review">Additional Ratings sv</string>
+    <string name="tv_expert">Expertise sv</string>
+    <string name="tv_professionalism">Professionalism sv</string>
+    <string name="error_msg_review_title_required">Title is required sv</string>
+    <string name="tv_overall">Overall sv</string>
+    <string name="tv_professional">Professional sv</string>
+    <string name="tv_post_ads">Post your ad here sv</string>
+    <string name="tv_ad_id">Ad ID:  sv</string>
+    <string name="tv_message">Message sv</string>
+    <string name="tv_additional_review_optional"> (Optional) sv</string>
+    <string name="tv_price_title">Price Title sv</string>
+    <string name="no_ads_found_text">No ads found sv</string>
+    <string name="no_message_found_text">No message found sv</string>
+    <string name="tv_select_sub">Select sub category sv</string>
+    <string name="tv_type_message_2">Write message sv</string>
+    <string name="tv_subscription_text">I want to post ads (</string>
+    <string name="no_reviews_found_text">No reviews found</string>
+    <string name="tv_months">months</string>
+    <string name="tv_month">month</string>
+
+
+    <string name="tv_err_organization_number">El número de organización no debe estar vacío</string>
+    <string name="tv_organization_number">Número de organización</string>
+    <string name="invalid_card" translatable="false">Tarjeta no valida</string>
+    <string name="paypal_pay_save">Pague a través de PayPal y ahorre</string>
+    <string name="strip_pay_save">Pague a través de Strip y ahorre</string>
+
+
+    <string name="title_paypal">PayPal Payment</string>
+    <string name="title_strip">Strip Payment</string>
+
+
+    <string name="labelRegularPrice">Regular Price sv: </string>
+    <string name="labelDiscountedPrice">Discounted Price sv: </string>
+
+</resources>

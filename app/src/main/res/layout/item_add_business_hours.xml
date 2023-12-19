@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llMain"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:tag="llMain">
+
+
+    <LinearLayout
+        android:id="@+id/llSub"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:tag="llSub"
+        android:weightSum="2.2">
+
+        <EditText
+            android:id="@+id/etFeature"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:layout_marginRight="@dimen/_8sdp"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:fontFamily="@font/roboto_regular"
+            android:gravity="start"
+            android:hint="@string/tv_feature_name"
+            android:inputType="textCapSentences"
+            android:textAlignment="viewStart"
+            android:maxLength="100"
+            android:maxLines="1"
+            android:imeOptions="actionNext"
+            android:singleLine="true"
+            android:paddingTop="6dp"
+            android:paddingBottom="15dp"
+            android:tag="etName"
+            android:textColor="@color/colorBlack"
+            android:textColorHint="@color/colorGrayLight"
+            android:textSize="@dimen/_13sdp"
+            android:theme="@style/EditTextTheme"
+            android:layout_marginEnd="@dimen/_8sdp" />
+
+        <EditText
+            android:id="@+id/etYesNo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_8sdp"
+            android:layout_marginRight="@dimen/_8sdp"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:focusableInTouchMode="true"
+            android:focusedByDefault="false"
+            android:textAlignment="viewStart"
+            android:fontFamily="@font/roboto_regular"
+            android:gravity="start"
+            android:hint="@string/tv_feature_yes_no"
+            android:inputType="textCapSentences"
+            android:maxLength="3"
+            android:maxLines="1"
+            android:paddingTop="6dp"
+            android:paddingBottom="15dp"
+            android:tag="etYesNo"
+            android:imeOptions="actionNext"
+            android:singleLine="true"
+            android:textColor="@color/colorBlack"
+            android:textColorHint="@color/colorGrayLight"
+            android:textSize="@dimen/_13sdp"
+            android:theme="@style/EditTextTheme"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:layout_marginEnd="@dimen/_8sdp" />
+
+        <ImageButton
+            android:id="@+id/btnAddDelete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|end"
+            android:layout_weight="0.3"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_blue_bg_add_small"
+            android:tag="btnDelete"
+            android:textAllCaps="true" />
+    </LinearLayout>
+
+
+</LinearLayout>

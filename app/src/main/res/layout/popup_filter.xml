@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tabLayout"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_250sdp"
+    android:background="@drawable/shape_grey_shadow">
+
+
+    <RelativeLayout
+        android:id="@+id/top_rl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_bold"
+            android:gravity="center_horizontal"
+            android:padding="@dimen/_10sdp"
+            android:text="@string/tv_filter"
+            android:textAppearance="@style/tab_text"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/_15sdp" />
+
+        <View
+            android:id="@+id/vLine"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/tvTitle"
+            android:background="@color/colorDividersCard" />
+
+        <TextView
+            android:id="@+id/tvOrder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/vLine"
+            android:fontFamily="@font/roboto_bold"
+            android:padding="@dimen/_10sdp"
+            android:text="@string/tv_order"
+            android:textColor="@color/colorDefaultText"
+            android:textSize="@dimen/_16sdp" />
+
+
+        <RadioGroup
+            android:id="@+id/rgOrder"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/tvOrder"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:layout_marginRight="@dimen/_16sdp"
+
+            android:checkedButton="@+id/offer"
+            android:orientation="horizontal"
+            android:tag="View3"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_16sdp">
+
+            <RadioButton
+                android:id="@+id/rbAZ"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="1dp"
+                android:layout_marginBottom="1dp"
+                android:layout_weight="1"
+                android:background="@drawable/toggle_widget_background"
+                android:button="@null"
+                android:checked="true"
+                android:fontFamily="@font/roboto_regular"
+                android:gravity="center"
+                android:maxLines="1"
+                android:tag="View4"
+                android:text="@string/tv_a_z"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/_16sdp" />
+
+            <RadioButton
+                android:id="@+id/rbZA"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="1dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginBottom="1dp"
+                android:layout_weight="1"
+                android:background="@drawable/toggle_widget_background"
+                android:button="@null"
+                android:fontFamily="@font/roboto_regular"
+                android:gravity="center"
+                android:maxLines="1"
+                android:tag="View5"
+                android:text="@string/tv_z_a"
+                android:textColor="@color/colorToggleText"
+                android:textSize="@dimen/_16sdp"
+                android:layout_marginEnd="1dp" />
+        </RadioGroup>
+
+
+        <TextView
+            android:id="@+id/tvSort"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rgOrder"
+            android:fontFamily="@font/roboto_bold"
+            android:padding="@dimen/_10sdp"
+            android:text="@string/tv_sort"
+            android:textColor="@color/colorDefaultText"
+            android:textSize="@dimen/_16sdp" />
+
+
+        <RadioGroup
+            android:id="@+id/rgSort"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/tvSort"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:layout_marginRight="@dimen/_16sdp"
+
+            android:checkedButton="@+id/offer"
+            android:orientation="horizontal"
+            android:tag="View3"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_16sdp">
+
+            <RadioButton
+                android:id="@+id/rbDistance"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="1dp"
+                android:layout_marginBottom="1dp"
+                android:layout_weight="1"
+                android:background="@drawable/toggle_widget_background"
+                android:button="@null"
+                android:checked="true"
+                android:fontFamily="@font/roboto_regular"
+                android:gravity="center"
+                android:maxLines="1"
+                android:tag="View4"
+                android:text="@string/tv_distance"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/_16sdp" />
+
+            <RadioButton
+                android:id="@+id/rbRating"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="1dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginBottom="1dp"
+                android:layout_weight="1"
+                android:background="@drawable/toggle_widget_background"
+                android:button="@null"
+                android:fontFamily="@font/roboto_regular"
+                android:gravity="center"
+                android:maxLines="1"
+                android:tag="View5"
+                android:text="@string/tv_rating"
+                android:textColor="@color/colorToggleText"
+                android:textSize="@dimen/_16sdp"
+                android:layout_marginEnd="1dp" />
+        </RadioGroup>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
